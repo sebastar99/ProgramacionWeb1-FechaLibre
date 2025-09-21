@@ -1,0 +1,210 @@
+html, body{
+    transition: all 5ms;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color__principal: #e7e7e7;
+    --color__header: #0a0a0a;     
+    --color__navbar: blue;
+    --color__footer: #9b9b9b;
+  }
+  
+*{
+    margin: 0;
+}
+
+.header{
+    background-color: black;
+}
+
+.header div img{
+    height: 50px;
+    width: 50px;
+}
+
+.header div input{
+    width: 40em;
+}
+
+.header .header__logo{
+    display: flex;
+    align-items: center;
+    padding: 0 2em;
+    justify-content: space-between;
+}
+
+.header .header__nav{
+    background-color: blue;
+    padding: 0.500em 0;
+}
+
+.header .header__nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .header__nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+
+.curso{
+    margin: 5em 0 ;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.curso__docente{
+    display: flex;
+}
+
+.curso__docente div{
+    background-color: #e9e9e9;
+    margin: 0 12em;
+}
+
+.curso__docente div img{
+    display: flex;
+    margin-left: 2em;
+}
+
+.curso__docente div div p{
+    padding-bottom: 0.5em;
+}
+
+.curso__recomendados {
+    display: flex;
+    gap: 10em;
+    padding: 3em 12em;
+    justify-content: center;
+}
+
+
+.curso__tarjeta {
+    width: 20em;
+    background: #fff;
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+
+.curso__tarjeta .curso__tarjeta__img{
+    position: relative;
+    width: 100%;
+    height: 12.5em;
+    background: #ccc; 
+    overflow: hidden;
+    display: block;
+    padding: 6px;          
+    box-sizing: border-box;
+}
+
+.curso__tarjeta .curso__tarjeta__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    display: block;
+    border: 1px solid #e1e1e1;
+    background: #bbb;
+}
+
+.curso__tarjeta__precio {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: rgba(0,0,0,0.9);
+    color: white;
+    padding: 6px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.curso__tarjeta__hora {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-weight: 700;
+    color: #111;
+    font-size: 14px;
+    background: rgba(255,255,255,0.9);
+    padding: 4px 6px;
+    border-radius: 3px;
+}
+
+.curso__tarjeta .curso__tarjeta__info {
+    padding: 10px;
+}
+
+.curso__tarjeta h3{
+    margin: 0 0 6px 0;
+    font-size: 13px;
+    color: #111;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.curso__tarjeta__info .curso__tarjeta__links{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.curso__tarjeta__links a {
+    font-size: 11px;
+    color: grey;
+    text-decoration: none;
+}
+
+.curso__tarjeta__info button{
+    margin-left: auto;
+    padding: 6px 10px;
+    font-size: 11px;
+    border: 1px solid #d0d0d0;
+    background: linear-gradient(#f8f8f8,#eee);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.curso__tarjeta__info button:hover{
+    filter: brightness(0.98);
+}
+
+  /* pequeños ajustes para que quede exactamente como la miniatura (opcional) */
+.curso__tarjeta .curso__tarjeta { background-clip: padding-box; }
+.curso__tarjeta .curso__tarjeta img { border-radius: 2px; }
+
+  /* responsive: tarjetas más pequeñas en móvil */
+@media (max-width:420px){
+    :root{ --card-w: 160px; --img-h: 120px; }
+    .curso__recomendados { padding: 12px; gap: 12px; flex-wrap: wrap; }
+}
+
+.curso__opiniones{
+    display: flex;
+    gap: 10em;
+    padding: 3em 12em;
+    justify-content: center;
+}
+
+.curso__opiniones__reseña p {
+  width: 100%;            
+  display: block;         
+  text-align: justify;    
+}
+
+.footer{
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color__footer);
+}
+
