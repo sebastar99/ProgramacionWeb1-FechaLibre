@@ -1,4 +1,4 @@
-html, body{
+html, body, a{
     transition: all 5ms;
     scroll-behavior: smooth;
 }
@@ -7,7 +7,9 @@ html, body{
     --color__principal: #e7e7e7;
     --color__header: #0a0a0a;     
     --color__navbar: blue;
-    --color__footer: #9b9b9b;
+    --color__footer: #2a2b3f;
+    --color__spam: #892de1;
+    --color__newsletter: #171717;
   }
   
 *{
@@ -200,11 +202,62 @@ html, body{
 }
 
 .footer{
-    height: 100px;
-    color: white;
-    display: flex;
-    align-items: center;
+    color: white; 
+    align-items: flex-start;
     justify-content: center;
     background-color: var(--color__footer);
 }
 
+.footer__empresas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 0.5em 0;
+}
+
+.footer div p span{
+    color: var(--color__spam);
+}
+
+.footer__derechos{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1em;
+}
+
+.footer__links a i{
+    color: white;
+}
+
+.footer__newsletter{
+    border: 1px solid white;
+    align-items: center;
+}
+
+.footer__newsletter p{
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+}
+
+.footer__newsletter form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__newsletter form input{
+    
+    height: 3em;
+    width: 20%;
+    
+}
+
+.footer__newsletter form button{
+    color: white;
+    height: 3em;
+    width: 20%;
+    border: none;
+    background-color: var(--color__spam);
+}
