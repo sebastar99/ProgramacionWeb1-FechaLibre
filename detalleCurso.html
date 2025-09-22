@@ -12,30 +12,21 @@
 </head>
 <body>
     <!--Inicio Header-->
-    <header class="header" id="header">
-        <div class="header__logo">
-            <img src="./multimedia/logo.png" alt="">
-            <label for="search">
-                <input type="text" name="search" id="search" placeholder="🔎">
-            </label>
-            <button><a href=""><i class="fa-solid fa-credit-card"></i></a></button>
-        </div>
-        <nav class="header__nav">
-            <ul>
-                <li>
-                    <a href="Inicio">Inicio</a>
-                </li>
-                <li>
-                    <a href="Cursos">Curso</a>
-                </li>
-                <li>
-                    <a href="Contacto">Contacto</a>
-                </li>
-                <li>
-                    <a href="Inscripcion">Inscripcion</a>
-                </li>
-            </ul>
+    <header class="header">
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fa fa-bars"></label>
+        <a href="#" class="logo">FechaLibre <span>.</span></a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Cursos</a>
+            <a href="#">Contacto</a>
+            <a href="#">Inscripcion</a>
         </nav>
+        <div class="icon">
+            <a href="" class="fas fa-heart"></a>
+            <a href="" class="fas fa-shopping-cart"></a>
+            <a href="" class="fas fa-user"></a>
+        </div>
     </header>
 <!--Fin Header-->
 <!--Inicio Main-->
@@ -143,40 +134,33 @@
 <!--Fin Main-->
 <!--Inicio Footer-->
     <footer class="footer">
-        <div class="footer__empresas">
-            <p>
-                Principales <span>empresas</span> que eligen nuestros cursos para capacitarse
-            </p>
-            <div>
-                <img src="https://s.udemycdn.com/partner-logos/v4/nasdaq-light.svg" alt="">
-                <img src="https://s.udemycdn.com/partner-logos/v4/volkswagen-light.svg" alt="">
-                <img src="https://s.udemycdn.com/partner-logos/v4/netapp-light.svg" alt="">
-                <img src="https://s.udemycdn.com/partner-logos/v4/eventbrite-light.svg" alt="">
+        <div class="footer__datos">
+            <div class="footer__datos__contenedores">
+                <h3>Datos del Grupo</h3>
+                <p>Martina Diaz: 41543579</p>
+                <p>Oriana Casteluche: 45871864</p>
+                <p>Sebastian Staropoli: 41543579</p>
+                <p>Ramiro Velardez: 41543579</p>
+                <p>Tomas Amaya: 41543579</p>
+            </div>
+            <div class="footer__datos__contenedores">
+                <h3>Nuestros Links</h3>
+                <a href="#">Home</a>
+                <a href="#">Cursos</a>
+                <a href="#">Contacto</a>
+                <a href="#">Inscripcion</a>
+            </div>
+            <div class="footer__datos__contenedores">
+                <h3>Nuestras Redes Sociales</h3>
+                <a href="#">GitHub</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkeDin</a>
+                <a href="#">Gmail</a>
             </div>
         </div>
-        <div>
-            <div class="footer__newsletter">
-                <p>NewsLetter</p>
-                <p>Suscribite y mantente al día con las últimas noticias, ofertas exclusivas y recursos útiles directamente en tu correo.</p>
-                <form action="">
-                    <div>
-                        <input type="text" placeholder="Tu Nombre" id="name">
-                    </div>
-                    <div>
-                        <input type="email" placeholder="Email" id="email">
-                    </div>
-                    <button type="submit">Suscribirse</button>
-                </form>
-            </div>
-        </div>
-        <div class="footer__derechos">
-            <p>© 2025 FechaLibre. Todos los derechos reservados.</p>
-            <div class="footer__links">
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                <a href=""><i class="fa-solid fa-envelope"></i></a>
-            </div>
+
+        <div class="footer__creditos">
+            <p>Creado por <span>FechaLibre</span> | todos los derechos reservados.</p>
         </div>
     </footer>
 <!--Fin Footer-->
