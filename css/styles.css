@@ -22,41 +22,10 @@ body{
 }
 
 .header{
-    background-color: black;
+    background-image: url(/multimedia/imagenhero.jpg);
+    flex-wrap: wrap;
+    object-fit: contain;
 }
-
-.header div img{
-    height: 50px;
-    width: 50px;
-}
-
-.header div input{
-    width: 40em;
-}
-
-.header .header__logo{
-    display: flex;
-    align-items: center;
-    padding: 0 2em;
-    justify-content: space-between;
-}
-
-.header .header__nav{
-    background-color: var(--color__navbar);
-    padding: 0.500em 0;
-}
-
-.header .header__nav a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.header .header__nav ul{
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-}
-
 
 .curso{
     margin: 5em 0 ;
