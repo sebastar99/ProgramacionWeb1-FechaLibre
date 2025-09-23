@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,104 +8,195 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <!--Inicio Header-->
     <header class="header">
-        <input type="checkbox" name="" id="toggler">
-        <label for="toggler" class="fa fa-bars"></label>
+        <!-- checkbox toggler (visualmente oculto) -->
+        <input type="checkbox" id="toggler" class="header-toggler" aria-label="Abrir menú" />
+
+        <!-- label que actúa como botón hamburguesa -->
+        <label for="toggler" class="burger fa fa-bars" aria-hidden="true"></label>
+
+        <!-- logo -->
         <a href="#" class="logo">FechaLibre <span>.</span></a>
+
+        <!-- Nav: links y search dentro -->
         <nav class="navbar">
             <a href="#">Home</a>
             <a href="#">Cursos</a>
-            <a href="./contacto.html" target="_blank">Contacto</a>
+            <a href="#">Contacto</a>
             <a href="#">Inscripcion</a>
+
+            <form class="search-bar" action="#" method="get">
+                <input type="text" name="q" placeholder="Buscar..." />
+                <button type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
+            </form>
         </nav>
+
+        <!-- iconos a la derecha -->
         <div class="icon">
             <a href="" class="fas fa-heart"></a>
             <a href="" class="fas fa-shopping-cart"></a>
             <a href="" class="fas fa-user"></a>
         </div>
     </header>
-<!--Fin Header-->
-<!--Inicio Main-->
+    <!--Fin Header-->
+    <!--Inicio Main-->
     <main>
         <section class="curso">
-            <div>
-                <img src="" alt="Imagen Curso">
-            </div>
-            <div>
-                <h1>Titulo Curso</h1>
-            </div>
-            <div>
-                <h1>Contenido por Clase</h1>
+            <!-- Imagen -->
+            <img src="/multimedia/cursoJavaScript.png" alt="" class="curso__foto">
+
+            <!-- Información -->
+            <div class="curso__info">
+                <h1 class="titulo">Introduccion a JavaScript</h1>
+
+                <div class="curso__info__descripcion">
+                    <p><strong>Valor:</strong> $150.000</p>
+                    <p><strong>Tiempo de dedicación necesario:</strong> 38 horas</p>
+                    <p><strong>Descripción del curso:</strong> Introducción práctica a JavaScript.</p>
+                    <p><strong>Requisitos Previos:</strong> HTML y CSS básicos</p>
+                    <p><strong>Certificado:</strong> <a href="">Ver certificado del curso</a></p>
+                </div>
+
+                <button class="curso__boton">INSCRIBIRSE</button>
+
+                <!-- Contenidos -->
+                <h2>CONTENIDOS POR CLASE</h2>
+
+                <div class="curso__info__contenido">
+
+                    <details>
+                        <summary>UNIDAD 1</summary>
+                        <ul>
+                            <li>Introduccion a javaScript – 160 min</li>
+                            <li>Control de ciclos – 160 min</li>
+                            <li>Funciones – 160 min</li>
+                            <li><strong>Primer entrega de proyecto</strong></li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary>UNIDAD 2</summary>
+                        <ul>
+                            <li>Array – 160 min</li>
+                            <li>Objetos – 160 min</li>
+                            <li>Funciones del orden superior – 160 min</li>
+                            <li> <strong>Segunda entrega de proyecto</strong></li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary>UNIDAD 3</summary>
+                        <ul>
+                            <li>DOM y eventos – 160 min</li>
+                            <li>Asincronismo y peticiones – 160 min</li>
+                            <li>Promesas y librerias – 160 min</li>
+                            <li><strong>Entrega final del proyecto</strong></li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary>UNIDAD 4</summary>
+                        <ul>
+                            <li>Puesta en Comun – 160 min</li>
+                            <li>Correcciones del proyecto – 160 min</li>
+                            <li><strong>Entrega de notas</strong></li>
+                        </ul>
+                    </details>
+
+                </div>
             </div>
         </section>
 
-        <section class="curso__docente">
-            <div>
-                <img src="" alt="foto docente">
-                <div>
-                    <h3>Nombre y Apellido</h3>
-                    <p><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: white;"></i></p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe sapiente ipsam harum vero accusantium illum non alias, laudantium amet nam explicabo, voluptatem neque. Aspernatur, dolore? Itaque repellat et saepe expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut impedit consequatur laudantium quasi earum atque expedita minus alias cumque illum obcaecati, hic consequuntur pariatur ea molestiae nemo libero distinctio sit.</p>
+        <section class="docente-section">
+
+            <div class="docente-card">
+                <div class="docente-avatar">
+                    <!-- reemplaza src por la imagen real -->
+                    <img src="/multimedia/cursoProfesor.png" alt="Foto docente" />
+                </div>
+
+                <div class="docente-info">
+                    <h3 class="docente-nombre">Alejandro Goitea</h3>
+
+                    <div class="docente-rating" aria-label="Valoración docente">
+                        <span class="star filled" aria-hidden="true">★</span>
+                        <span class="star filled" aria-hidden="true">★</span>
+                        <span class="star filled" aria-hidden="true">★</span>
+                        <span class="star filled" aria-hidden="true">★</span>
+                        <span class="star empty" aria-hidden="true">★</span>
+                    </div>
+
+                    <p class="docente-bio">
+                        Soy profesor de programación con más de 5 años de experiencia enseñando JavaScript, Python y
+                        desarrollo web. Me apasiona ayudar a mis estudiantes a convertir ideas en proyectos funcionales y a potenciar
+                        sus habilidades técnicas. Mi objetivo es que cada clase sea práctica, dinámica y enfocada en resolver problemas del mundo real.
+                    </p>
                 </div>
             </div>
         </section>
 
         <section class="curso__recomendados">
             <div class="curso__tarjeta">
-                    <div class="curso__tarjeta__img">
-                    <img src="./multimedia/cursoDestacado.png" alt="foto_curso">
+                <div class="curso__tarjeta__img">
+                    <img src="/multimedia/cursoIA.png" alt="foto_curso">
                     <div class="curso__tarjeta__precio">$150.000</div>
-                    <div class="curso__tarjeta__hora"><strong>38</strong> <span style="font-weight:400;font-size:11px">hs</span></div>
+                    <div class="curso__tarjeta__hora"><strong>38</strong> <span
+                            style="font-weight:400;font-size:11px">hs</span></div>
                 </div>
                 <div class="curso__tarjeta__info">
-                    <h3>Nombre Curso</h3>
+                    <h3>Introduccion a la IA</h3>
                     <div class="curso__tarjeta__links">
                         <a href="#">Ver Detalle</a>
                         <button type="button">Inscribirse</button>
                     </div>
                 </div>
             </div>
-                    <div class="curso__tarjeta">
-                    <div class="curso__tarjeta__img">
-                    <img src="./multimedia/cursoDestacado.png" alt="foto_curso">
+            <div class="curso__tarjeta">
+                <div class="curso__tarjeta__img">
+                    <img src="/multimedia/cursoPoo.png" alt="foto_curso">
                     <div class="curso__tarjeta__precio">$150.000</div>
-                    <div class="curso__tarjeta__hora"><strong>38</strong> <span style="font-weight:400;font-size:11px">hs</span></div>
+                    <div class="curso__tarjeta__hora"><strong>38</strong> <span
+                            style="font-weight:400;font-size:11px">hs</span></div>
                 </div>
                 <div class="curso__tarjeta__info">
-                    <h3>Nombre Curso</h3>
+                    <h3>Introduccion a Java</h3>
                     <div class="curso__tarjeta__links">
                         <a href="#">Ver Detalle</a>
                         <button type="button">Inscribirse</button>
                     </div>
                 </div>
             </div>
-                    <div class="curso__tarjeta">
-                    <div class="curso__tarjeta__img">
-                    <img src="./multimedia/cursoDestacado.png" alt="foto_curso">
+            <div class="curso__tarjeta">
+                <div class="curso__tarjeta__img">
+                    <img src="/multimedia/cursoDiseñoWeb.png" alt="foto_curso">
                     <div class="curso__tarjeta__precio">$150.000</div>
-                    <div class="curso__tarjeta__hora"><strong>38</strong> <span style="font-weight:400;font-size:11px">hs</span></div>
+                    <div class="curso__tarjeta__hora"><strong>38</strong> <span
+                            style="font-weight:400;font-size:11px">hs</span></div>
                 </div>
                 <div class="curso__tarjeta__info">
-                    <h3>Nombre Curso</h3>
+                    <h3>Diseñador Web</h3>
                     <div class="curso__tarjeta__links">
                         <a href="#">Ver Detalle</a>
                         <button type="button">Inscribirse</button>
                     </div>
                 </div>
             </div>
-                    <div class="curso__tarjeta">
-                    <div class="curso__tarjeta__img">
-                    <img src="./multimedia/cursoDestacado.png" alt="foto_curso">
+            <div class="curso__tarjeta">
+                <div class="curso__tarjeta__img">
+                    <img src="/multimedia/cursoJavaScript.png" alt="foto_curso">
                     <div class="curso__tarjeta__precio">$150.000</div>
-                    <div class="curso__tarjeta__hora"><strong>38</strong> <span style="font-weight:400;font-size:11px">hs</span></div>
+                    <div class="curso__tarjeta__hora"><strong>38</strong> <span
+                            style="font-weight:400;font-size:11px">hs</span></div>
                 </div>
                 <div class="curso__tarjeta__info">
-                    <h3>Nombre Curso</h3>
+                    <h3>JavaScript Avanzado</h3>
                     <div class="curso__tarjeta__links">
                         <a href="#">Ver Detalle</a>
                         <button type="button">Inscribirse</button>
@@ -115,24 +207,33 @@
 
         <section class="curso__opiniones">
             <div class="curso__opiniones__reseña">
-                    <h3>Nombre y Apellido</h3>
-                    <p><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: black;"></i></p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe sapiente ipsam harum vero accusantium illum non alias, laudantium amet nam explicabo, voluptatem neque. Aspernatur, dolore? Itaque repellat et saepe expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut impedit consequatur laudantium quasi earum atque expedita minus alias cumque illum obcaecati, hic consequuntur pariatur ea molestiae nemo libero distinctio sit.</p>
+                <h3>Mariana Gimenez</h3>
+                <p><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star"
+                        style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                        class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star"
+                        style="color: black;"></i></p>
+                <p>El curso superó mis expectativas, las explicaciones son claras y los ejemplos prácticos me ayudaron a entender rápido. Recomiendo totalmente esta formación</p>
             </div>
             <div class="curso__opiniones__reseña">
-                    <h3>Nombre y Apellido</h3>
-                    <p><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: black;"></i></p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe sapiente ipsam harum vero accusantium illum non alias, laudantium amet nam explicabo, voluptatem neque. Aspernatur, dolore? Itaque repellat et saepe expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut impedit consequatur laudantium quasi earum atque expedita minus alias cumque illum obcaecati, hic consequuntur pariatur ea molestiae nemo libero distinctio sit.</p>
+                <h3>Carlos Pereira</h3>
+                <p><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star"
+                        style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                        class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star"
+                        style="color: black;"></i></p>
+                <p>Aprendí a programar desde cero y ahora puedo crear mis propios proyectos. El profesor hace que todo sea sencillo y motivador.</p>
             </div>
             <div class="curso__opiniones__reseña">
-                    <h3>Nombre y Apellido</h3>
-                    <p><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star" style="color: black;"></i></p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe sapiente ipsam harum vero accusantium illum non alias, laudantium amet nam explicabo, voluptatem neque. Aspernatur, dolore? Itaque repellat et saepe expedita? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut impedit consequatur laudantium quasi earum atque expedita minus alias cumque illum obcaecati, hic consequuntur pariatur ea molestiae nemo libero distinctio sit.</p>
+                <h3>Lucia Roldan</h3>
+                <p><i class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star"
+                        style="color: yellow;"></i><i class="fa-solid fa-star" style="color: yellow;"></i><i
+                        class="fa-solid fa-star" style="color: yellow;"></i><i class="fa-solid fa-star"
+                        style="color: black;"></i></p>
+                <p>Excelente curso, muy completo y bien estructurado. Me dio la confianza necesaria para aplicar mis conocimientos en el trabajo.</p>
             </div>
         </section>
     </main>
-<!--Fin Main-->
-<!--Inicio Footer-->
+    <!--Fin Main-->
+    <!--Inicio Footer-->
     <footer class="footer">
         <div class="footer__datos">
             <div class="footer__datos__contenedores">
@@ -163,6 +264,7 @@
             <p>Creado por <span>FechaLibre</span> | todos los derechos reservados.</p>
         </div>
     </footer>
-<!--Fin Footer-->
+    <!--Fin Footer-->
 </body>
+
 </html>
