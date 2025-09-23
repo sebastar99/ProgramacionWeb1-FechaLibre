@@ -9,8 +9,9 @@ html, body, a{
     --color__footer: #2a2b3f;
     --color__span: #1565c0;
     --color__newsletter: #171717;
-    --color__sombra: #d4e6f1;
+    --color__sombra: #e0f3ff;
     --color__boton: #5499c7;
+    --color__boton-hover: #0277BD;
 }
   
 body{
@@ -57,6 +58,46 @@ html{
     color: var(--color__span);
 }
 
+.header .search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+}
+
+.header .search-bar input[type="text"] {
+    padding: 0.5em 1em;
+    border: 1px solid #ccc;
+    border-radius: 2em 0 0 2em;
+    outline: none;
+    font-size: 1em;
+    background: #f9f9f9;
+    transition: border-color 0.2s;
+}
+
+.header .search-bar input[type="text"]:focus {
+    border-color: var(--color__span);
+}
+
+.header .search-bar button {
+    padding: 0.5em 1em;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 2em 2em 0;
+    background: var(--color__span);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.2s;
+}
+
+.header .search-bar button:hover {
+    background: #104e8b;
+}
+.header .search-bar button i {
+    font-size: 1em;
+    color: #fff;
+}
+
 .header .navbar a{
     font-size: 1em;
     padding: 0 1.5em;
@@ -89,7 +130,60 @@ html{
     border: .1rem solid rgba(0,0,0,.3);
     display: none;
 }
+
 /*FIN HEADER*/
+/*INICIO MAIN*/
+.foto-fondo{ 
+    margin: 0;
+    background-image: url("../multimedia/imagenhero.jpg");
+    width: 100%;
+    height: 40em; 
+    background-size: cover;     
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+.foto-fondo .main{
+    text-align: center;
+    color: var(--color__sombra);
+    text-shadow: 1em 1em 2em rgba(0,0,0,.10);
+    padding: 10em 2em 0 2em;
+}
+.foto-fondo .main h1{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    text-shadow: 1px 1px 1px #0a0a0a;
+}
+.foto-fondo .main h1 span{
+    color: var(--color__span);
+    text-decoration: solid;
+    text-shadow: 1px 1px 1px #ffff;
+
+}
+.foto-fondo .main p{
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    text-shadow: 1px 1px 1px #0a0a0a;
+}
+.inscipcion{
+    padding: 2em 3em;
+    width: 200em;
+    height: 30em;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 2em;
+}
+.inscipcion .paso-1 h2{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    padding: 2em 3 em;
+    color: #333;
+    background-color: black;
+
+}
+
+/*FIN MAIN*/
+
+/*INICIO FOOTER*/
 .footer .footer__datos{
     display: flex;
     justify-content: space-around;
@@ -135,6 +229,7 @@ html{
 .footer .footer__creditos span{
     color: var(--color__span);
 }
+/*FIN FOOTER*/
 
 /*INICIO RESPONSIVE*/
 @media (max-width:991px){
