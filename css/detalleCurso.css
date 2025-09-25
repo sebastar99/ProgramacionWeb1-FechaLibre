@@ -6,28 +6,16 @@ a {
 
 :root {
     --color__principal: #0000001a;
-
-
+    --color__header: #fff;
     --color__footer: #2a2b3f;
     --color__span: #1565c0;
-
     --color__docente: #d4e6f1;
     --color__boton: #5499c7;
-
-
-
-
-
-
-
-    --text: #222;
-    --muted: #666;
-
-
 }
 
 body {
     background-color: var(--color__principal);
+    height: 100vh;
 }
 
 * {
@@ -43,7 +31,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 6em;
     overflow-x: hidden;
 }
 
@@ -53,17 +41,17 @@ html {
     top: 0;
     left: 0;
     right: 0;
-    background: #fff;
+    background: var(--color__header);
     padding: 0.6em 2em;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1em;
     z-index: 9999;
-    box-shadow: 0 0.5em 1em var(--color__sombra);
+
 }
 
-.header-toggler {
+.header__toggler {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -75,14 +63,14 @@ html {
     border: 0;
 }
 
-.header .burger {
+.header .header__menu {
     display: none;
     font-size: 1.4em;
     color: #333;
     border-radius: 0.4em;
     padding: 0.45em;
     cursor: pointer;
-    border: .1rem solid rgba(0, 0, 0, .18);
+    border: 0.1em solid rgba(0, 0, 0, .18);
     background: #fff;
 }
 
@@ -97,13 +85,11 @@ html {
     color: var(--color__span);
 }
 
-
 .header .navbar {
     display: flex;
     align-items: center;
     gap: 1em;
 }
-
 
 .header .navbar a {
     font-size: 1em;
@@ -116,15 +102,14 @@ html {
     color: var(--color__span);
 }
 
-
-.header .search-bar {
+.header .header__buscador {
     display: flex;
     align-items: center;
     gap: 0.4em;
     margin-left: 0.6em;
 }
 
-.header .search-bar input[type="text"] {
+.header .header__buscador input[type="text"] {
     padding: 0.45em 0.9em;
     border: 1px solid #ccc;
     border-radius: 15px;
@@ -133,11 +118,11 @@ html {
     background: #f9f9f9;
 }
 
-.header .search-bar input[type="text"]:focus {
+.header .header__buscador input[type="text"]:focus {
     border-color: var(--color__span);
 }
 
-.header .search-bar button {
+.header .header__buscador button {
     padding: 0.45em 0.8em;
     border: 1px solid #ccc;
     border-left: none;
@@ -148,18 +133,17 @@ html {
 
 }
 
-.header .search-bar button i {
+.header .header__buscador button i {
     font-size: 1rem;
 }
 
-
-.header .icon a {
+.header .header__iconos a {
     font-size: 1em;
     color: #333;
     margin-left: 0.8em;
 }
 
-.header .icon a:hover {
+.header .header__iconos a:hover {
     color: var(--color__span);
 }
 
@@ -170,7 +154,7 @@ html {
     display: flex;
     gap: 2em;
     align-items: flex-start;
-    max-width: 56em;
+    max-width: 70em;
     margin: 8em auto;
 }
 
@@ -219,7 +203,6 @@ h2 {
     color: var(--color__span);
 }
 
-/* Estilo acordeón */
 .curso__info__contenido details {
     border: 1px solid #ddd;
     border-radius: 6px;
@@ -253,12 +236,37 @@ h2 {
 }
 
 
+.curso__barra__info {
+    display: flex;
+    border: 2px solid #666;
+    width: 15em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    border-radius: 8px;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.curso__barra__info div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5em 0;
+}
+
+.curso__barra__icono{
+    font-size: 1.5em;
+    padding: 0.250em;
+}
+
 /*FIN INFORMACION CURSO*/
 
 
 /*INICIO DOCENTE CURSO*/
-/* tarjeta principal */
-.docente-card {
+.docente__presentacion {
     max-width: 68.75em;
     background: var(--color__docente);
     border-radius: 6px;
@@ -270,8 +278,7 @@ h2 {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.02) inset;
 }
 
-/* avatar */
-.docente-avatar {
+.docente__avatar {
     width: 4.5em;
     height: 4.5em;
     min-width: 4.5em;
@@ -281,25 +288,21 @@ h2 {
     margin-left: 6px;
 }
 
-.docente-avatar img {
+.docente__avatar img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid rgba(0, 0, 0, 0.06);
     background: #dcdcdc;
-    /* placeholder si no hay img */
 }
 
-/* info: nombre, estrellas, bio */
-.docente-info {
+.docente__info {
     flex: 1;
     min-width: 0;
-    /* para truncado si es necesario */
 }
 
-/* nombre */
-.docente-nombre {
+.docente__nombre {
     margin: 0;
     font-size: 1rem;
     font-weight: 700;
@@ -308,8 +311,7 @@ h2 {
     color: #111;
 }
 
-/* rating (estrellas) */
-.docente-rating {
+.docente__estrellas {
     margin: 6px 0;
     display: inline-flex;
     gap: 6px;
@@ -317,39 +319,34 @@ h2 {
     line-height: 1;
 }
 
-.star {
+.estrella {
     font-size: 1.2em;
     display: inline-block;
 }
 
-/* llenas y vacías */
-.star.filled {
+.estrella__amarilla {
     color: yellow;
 }
 
-.star.empty {
+.estrella__negra {
     color: black;
 }
 
-/* bio (texto) */
-.docente-bio {
+.docente__explicacion {
     margin: 6px 0 0 0;
-    color: var(--muted);
+    color: #666;
     font-size: 0.92rem;
     line-height: 1.45;
-    /* para que el texto no empuje el avatar si es muy largo */
     word-break: break-word;
 }
 
 /*FIN DOCENTE CURSO*/
-
 .curso__recomendados {
     display: flex;
     gap: 10em;
     padding: 3em 12em;
     justify-content: center;
 }
-
 
 .curso__tarjeta {
     width: 20em;
@@ -359,7 +356,6 @@ h2 {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 
 }
-
 
 .curso__tarjeta .curso__tarjeta__img {
     position: relative;
@@ -453,40 +449,34 @@ h2 {
     border-radius: 2px;
 }
 
-
-@media (max-width:420px) {
-    :root {
-        --card-w: 160px;
-        --img-h: 120px;
-    }
-
-    .curso__recomendados {
-        padding: 12px;
-        gap: 12px;
-        flex-wrap: wrap;
-    }
-}
-
+/*INICIO CURSO OPINIONES*/
 .curso__opiniones {
-    display: flex;
-    gap: 10em;
-    padding: 3em 12em;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 4em;
+    grid-row-gap: 4em;
+    width: 70%;
+    margin: 0 auto;
 }
+
 
 .curso__opiniones__reseña p {
     flex-wrap: wrap;
     display: block;
-    text-align: start;
+    text-align: justify;
 }
 
-.footer .footer__datos {
+/*FIN CURSO OPINIONES*/
+
+/*INICIO FOOTER*/
+.footer__datos {
+    margin-top: 8em;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
-
 
 .footer .footer__datos .footer__datos__contenedores h3 {
     color: #333;
@@ -499,7 +489,6 @@ h2 {
     color: #666;
     padding: 0.5em 0;
 }
-
 
 .footer .footer__datos .footer__datos__contenedores a {
     display: block;
@@ -526,19 +515,30 @@ h2 {
     color: var(--color__span);
 }
 
+/*FIN FOOTER*/
+
 /*INICIO RESPONSIVE*/
 @media (max-width:991px) {
     html {
-        font-size: 55%;
+        font-size: 70%;
     }
 
     header {
         padding: 2em;
     }
+
+    .curso__recomendados {
+        display: flex;
+        gap: 5em;
+        padding: 2em 10em;
+        justify-content: center;
+    }
 }
 
-@media (max-width: 768px) {
-    .header .burger {
+@media (max-width: 778px) {
+
+    /*INICIO RESPONSIVE HEADER*/
+    .header .header__menu {
         display: block;
     }
 
@@ -564,12 +564,11 @@ h2 {
     }
 
 
-    .header-toggler:checked~.navbar {
+    .header__toggler:checked~.navbar {
         max-height: 60vh;
         padding: 1em;
     }
 
-    /* Links: bloques verticales */
     .header .navbar a {
         display: block;
         margin: 0;
@@ -581,7 +580,7 @@ h2 {
         width: 100%;
     }
 
-    .header .navbar .search-bar {
+    .header .navbar .header__buscador {
         display: flex;
         gap: 0.5em;
         align-items: center;
@@ -589,7 +588,7 @@ h2 {
         margin-top: 0.2em;
     }
 
-    .header .navbar .search-bar input[type="text"] {
+    .header .navbar .header__buscador input[type="text"] {
         flex: 1 1 auto;
         padding: 0.6em 0.9em;
         font-size: 1em;
@@ -597,17 +596,73 @@ h2 {
         border: 1px solid rgba(0, 0, 0, .08);
     }
 
-    .header .navbar .search-bar button {
+    .header .navbar .header__buscador button {
         padding: 0.55em 0.9em;
         border-radius: 0.4em;
         font-size: 1em;
     }
 
-    .header .icon a {
+    .header .header__iconos a {
         margin-left: 0.5em;
         font-size: 0.95em;
     }
 
+    /*FIN RESPONSIVE HEADER*/
+
+    /*INICIO RESPONSIVE DOCENTE*/
+    .docente__presentacion {
+        max-width: 40em;
+    }
+
+    /*FIN RESPONSIVE DOCENTE*/
+
+    /*INICIO RESPONSIVE CURSOS RECOMENDADOS*/
+    .curso__recomendados {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1em;
+        padding: 1.5em;
+        justify-items: center;
+        align-items: start;
+    }
+
+    .curso__tarjeta {
+        width: 100%;
+        max-width: 20em;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .curso__tarjeta .curso__tarjeta__img {
+        height: 10.5em;
+        padding: 0.5em;
+    }
+
+    .curso__tarjeta .curso__tarjeta__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .curso__tarjeta h3 {
+        font-size: 10px;
+
+    }
+
+    .curso__tarjeta__info {
+        padding: 0.75em;
+    }
+
+    .curso__tarjeta__links {
+        gap: 0.625em;
+    }
+
+    .curso__tarjeta__info button {
+        padding: 0.375em 0.625em;
+        font-size: 8px;
+    }
+
+    /*FIN RESPONSIVE CURSOS RECOMENDADOS*/
 
     /*INICIO RESPONSIVE INFORMACION DEL CURSO*/
     .curso {
@@ -627,7 +682,34 @@ h2 {
         border: none;
     }
 
+
+    .curso__barra__info {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .curso__barra__info div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 0;
+    }
+
     /*FIN RESPONSIVE INFORMACION DEL CURSO*/
+
+    /*Inicio RESPONSIVE RESEÑAS DEL CURSO*/
+    .curso__opiniones {
+        grid-template-columns: 1fr 1fr;
+        gap: 3em;
+    }
+
+    .curso__opiniones__reseña p {
+        width: 15em;
+    }
+
+    /*FIN RESPONSIVE RESEÑAS DEL CURSO*/
 
 
 }
@@ -640,16 +722,28 @@ h2 {
     header {
         padding: 2em;
     }
+
     /*Inicio RESPONSIVE RESEÑAS DEL CURSO*/
     .curso__opiniones {
-        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
         gap: 3em;
     }
-    
-    .curso__opiniones__reseña p{
+
+    .curso__opiniones__reseña p {
         width: 15em;
     }
+
     /*FIN RESPONSIVE RESEÑAS DEL CURSO*/
+
+    .curso__recomendados {
+        grid-template-columns: 1fr;
+        gap: 2em;
+        padding: 1rem;
+    }
+
+    .curso__tarjeta {
+        max-width: 80%;
+    }
 }
 
 /*FIN RESPONSIVE*/
