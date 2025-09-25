@@ -159,7 +159,7 @@ html {
 }
 
 .curso__foto {
-    width: 15.625em;
+    width: 16em;
     height: 12.5em;
     background: #ccc;
     display: flex;
@@ -535,7 +535,7 @@ h2 {
     }
 }
 
-@media (max-width: 778px) {
+@media (max-width: 47em) {
 
     /*INICIO RESPONSIVE HEADER*/
     .header .header__menu {
@@ -747,3 +747,4 @@ h2 {
 }
 
 /*FIN RESPONSIVE*/
+

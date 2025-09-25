@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <title>Introduccion a la IA</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
         <input type="checkbox" id="toggler" class="header__toggler" aria-label="Abrir menú" />
 
         <label for="toggler" class="header__menu fa fa-bars" aria-hidden="true"></label>
-        <a href="./index.html" class="logo">FechaLibre <span>.</span></a>
+        <a href="../home.html" class="logo">FechaLibre <span>.</span></a>
 
 
         <nav class="navbar">
@@ -46,7 +46,31 @@
     <main>
         <section class="curso">
             <!-- Imagen -->
-            <img src="/multimedia/cursoIA.png" alt="" class="curso__foto">
+            <div>
+                <img src="/multimedia/cursoIA.png" alt="" class="curso__foto">
+                <div class="curso__barra__info" style="margin-top: 2em;">
+                    <div>
+                        <i class="curso__barra__icono fa-solid fa-credit-card"></i>
+                        <p>Todas Las Tarjetas</p>
+                        <p>Credito y Debito</p>
+                    </div>
+                    <div>
+                        <i class="curso__barra__icono fa-solid fa-money-bill"></i>
+                        <p>Deposito en Efectivo</p>
+                        <p>Deposita y paga</p>
+                    </div>
+                    <div>
+                        <i class="curso__barra__icono fa-solid fa-building-columns"></i>
+                        <p>Transferencia Bancaria</p>
+                        <p>Desde cualquier lado</p>
+                    </div>
+                    <div>
+                        <i class="curso__barra__icono fa-solid fa-money-bill-transfer"></i>
+                        <p>Modo</p>
+                        <p>Reintegros de hasta 20%</p>
+                    </div>
+                </div>
+            </div>
 
             <!-- Información -->
             <div class="curso__info">
@@ -61,6 +85,14 @@
                         <a href="#" onclick="window.open('/multimedia/ejemploCertificado.png'); return false;">
                             Ver ejemplo de certificado
                         </a>
+                    </p>
+                    <p>
+                        En este curso aprenderás los conceptos fundamentales de la Inteligencia Artificial y el
+                        aprendizaje automático, desde la teoría básica hasta su aplicación práctica.
+                        Trabajarás con técnicas clave como regresión, clasificación, árboles de decisión, clustering y
+                        redes neuronales, y aprenderás a elegir la técnica adecuada según el problema.
+                        Aprenderás a preparar y limpiar datos, realizar ingeniería de características y usar métricas de
+                        evaluación para medir y mejorar el rendimiento de tus modelos.
                     </p>
                 </div>
 
@@ -153,11 +185,14 @@
                     </div>
 
                     <p class="docente__explicacion">
-                        Soy profesor de programación con más de 5 años de experiencia enseñando JavaScript, Python y
-                        desarrollo web. Me apasiona ayudar a mis estudiantes a convertir ideas en proyectos funcionales
-                        y a potenciar
-                        sus habilidades técnicas. Mi objetivo es que cada clase sea práctica, dinámica y enfocada en
-                        resolver problemas del mundo real.
+                        Soy profesor especializado en Inteligencia Artificial, con amplia experiencia en el desarrollo
+                        de soluciones basadas en aprendizaje automático.
+                        He participado en proyectos de investigación y aplicaciones prácticas que integran la IA en
+                        distintos ámbitos.
+                        Cuento con sólidos conocimientos en programación, que aplico al diseño y entrenamiento de
+                        modelos inteligentes.
+                        Me apasiona enseñar y simplificar conceptos complejos para que los estudiantes los comprendan y
+                        puedan aplicarlos.
                     </p>
                 </div>
             </div>
@@ -166,15 +201,15 @@
         <section class="curso__recomendados">
             <div class="curso__tarjeta">
                 <div class="curso__tarjeta__img">
-                    <img src="/multimedia/cursoIA.png" alt="foto_curso">
+                    <img src="/multimedia/cursoDestacado.png" alt="foto_curso">
                     <div class="curso__tarjeta__precio">$150.000</div>
                     <div class="curso__tarjeta__hora"><strong>38</strong> <span
                             style="font-weight:400;font-size:11px">hs</span></div>
                 </div>
                 <div class="curso__tarjeta__info">
-                    <h3>Introduccion a la IA</h3>
+                    <h3>Introduccion a JavaScript</h3>
                     <div class="curso__tarjeta__links">
-                        <a href="./cursoIA.html">Ver Detalle</a>
+                        <a href="./detalleCurso.html">Ver Detalle</a>
                         <button type="button">Inscribirse</button>
                     </div>
                 </div>
@@ -182,8 +217,8 @@
             <div class="curso__tarjeta">
                 <div class="curso__tarjeta__img">
                     <img src="/multimedia/cursoPoo.png" alt="foto_curso">
-                    <div class="curso__tarjeta__precio">$150.000</div>
-                    <div class="curso__tarjeta__hora"><strong>38</strong> <span
+                    <div class="curso__tarjeta__precio">$120.000</div>
+                    <div class="curso__tarjeta__hora"><strong>36</strong> <span
                             style="font-weight:400;font-size:11px">hs</span></div>
                 </div>
                 <div class="curso__tarjeta__info">

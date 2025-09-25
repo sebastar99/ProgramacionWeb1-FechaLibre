@@ -1,4 +1,5 @@
-<!DOCTYPE html><!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <title>Java Inicial</title>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <input type="checkbox" id="toggler" class="header__toggler" aria-label="Abrir menú" />
 
         <label for="toggler" class="header__menu fa fa-bars" aria-hidden="true"></label>
-        <a href="./index.html" class="logo">FechaLibre <span>.</span></a>
+        <a href="../home.html" class="logo">FechaLibre <span>.</span></a>
 
 
         <nav class="navbar">
@@ -46,22 +47,56 @@
     <main>
         <section class="curso">
             <!-- Imagen -->
-            <img src="/multimedia/cursoJavaScript.png" alt="" class="curso__foto">
+            <div>
+                <img src="/multimedia/cursoPoo.png" alt="" class="curso__foto">
+                <div class="curso__barra__info" style="margin-top: 2em;">
+                    <div>
+                        <i class="curso__barra__icono fa-solid fa-credit-card"></i>
+                        <p>Todas Las Tarjetas</p>
+                        <p>Credito y Debito</p>
+                    </div>
+                    <div>
+                        <i class="curso__barra__icono fa-solid fa-money-bill"></i>
+                        <p>Deposito en Efectivo</p>
+                        <p>Deposita y paga</p>
+                    </div>
+                    <div>
+                        <i class="curso__barra__icono fa-solid fa-building-columns"></i>
+                        <p>Transferencia Bancaria</p>
+                        <p>Desde cualquier lado</p>
+                    </div>
+                    <div>
+                        <i class="curso__barra__icono fa-solid fa-money-bill-transfer"></i>
+                        <p>Modo</p>
+                        <p>Reintegros de hasta 20%</p>
+                    </div>
+                </div>
+            </div>
 
             <!-- Información -->
             <div class="curso__info">
-                <h1 class="titulo">Introduccion a JavaScript</h1>
+                <h1 class="titulo">Introduccion a Java</h1>
 
                 <div class="curso__info__descripcion">
-                    <p><strong>Valor:</strong> $150.000</p>
-                    <p><strong>Tiempo de dedicación necesario:</strong> 38 horas</p>
-                    <p><strong>Descripción del curso:</strong> Introducción práctica a JavaScript.</p>
-                    <p><strong>Requisitos Previos:</strong> HTML y CSS básicos</p>
+                    <p><strong>Valor:</strong> $120.000</p>
+                    <p><strong>Tiempo de dedicación necesario:</strong> 36 horas</p>
+                    <p><strong>Descripción del curso:</strong> Introducción a POO de Java.</p>
+                    <p><strong>Requisitos Previos:</strong> Ninguna</p>
                     <p><strong>Certificado:</strong>
                         <a href="#" onclick="window.open('/multimedia/ejemploCertificado.png'); return false;">
                             Ver ejemplo de certificado
                         </a>
                     </p>
+                    <p>En este curso aprenderás los fundamentos de Java y cómo aplicarlos para crear aplicaciones
+                        robustas y mantenibles. Dominarás la programación orientada a objetos (clases, herencia,
+                        interfaces y polimorfismo) y
+                        trabajarás con colecciones, manejo de excepciones y entrada/salida.
+                        Construirás pequeños proyectos prácticos que incluyen acceso a bases de datos con JDBC, pruebas
+                        con JUnit y una introducción a APIs REST.
+                        También verás herramientas de desarrollo como Maven/Gradle y buenas prácticas de depuración y
+                        organización de código.
+                        Este curso está pensado para quienes ya tienen nociones básicas de programación y quieren
+                        profesionalizarse en Java para desarrollar aplicaciones reales.</p>
                 </div>
 
                 <button class="curso__boton">INSCRIBIRSE</button>
@@ -74,9 +109,9 @@
                     <details>
                         <summary>UNIDAD 1</summary>
                         <ul>
-                            <li>Introduccion a javaScript – 160 min</li>
-                            <li>Control de ciclos – 160 min</li>
-                            <li>Funciones – 160 min</li>
+                            <li>Introduccion a Java – 180 min</li>
+                            <li>Variables – 180 min</li>
+                            <li>Condicionales – 180 min</li>
                             <li><strong>Primer entrega de proyecto</strong></li>
                         </ul>
                     </details>
@@ -84,9 +119,9 @@
                     <details>
                         <summary>UNIDAD 2</summary>
                         <ul>
-                            <li>Array – 160 min</li>
-                            <li>Objetos – 160 min</li>
-                            <li>Funciones del orden superior – 160 min</li>
+                            <li>Ciclos – 180 min</li>
+                            <li>Array – 180 min</li>
+                            <li>Array bidimensionales – 180 min</li>
                             <li> <strong>Segunda entrega de proyecto</strong></li>
                         </ul>
                     </details>
@@ -94,9 +129,9 @@
                     <details>
                         <summary>UNIDAD 3</summary>
                         <ul>
-                            <li>DOM y eventos – 160 min</li>
-                            <li>Asincronismo y peticiones – 160 min</li>
-                            <li>Promesas y librerias – 160 min</li>
+                            <li>POO – 180 min</li>
+                            <li>Clases – 180 min</li>
+                            <li>Objetos – 180 min</li>
                             <li><strong>Entrega final del proyecto</strong></li>
                         </ul>
                     </details>
@@ -104,19 +139,18 @@
                     <details>
                         <summary>UNIDAD 4</summary>
                         <ul>
-                            <li>Puesta en Comun – 160 min</li>
-                            <li>Correcciones del proyecto – 160 min</li>
+                            <li>Introduccion a Herencia – 180 min</li>
+                            <li>Introduccion a TDD – 180 min</li>
                             <li><strong>Entrega de notas</strong></li>
                         </ul>
                     </details>
-
                 </div>
             </div>
             <div class="curso__barra__info">
                 <div>
                     <i class="curso__barra__icono fa-solid fa-calendar-days"></i>
                     <p>Duracion</p>
-                    <p>15 semanas</p>
+                    <p>13 semanas</p>
                 </div>
                 <div>
                     <i class="curso__barra__icono fa-solid fa-clock"></i>
@@ -126,12 +160,12 @@
                 <div>
                     <i class="curso__barra__icono fa-solid fa-tv"></i>
                     <p>Clases en vivo</p>
-                    <p>1 clase semanal de 2hs</p>
+                    <p>1 clase semanal de 3hs</p>
                 </div>
                 <div>
                     <i class="curso__barra__icono fa-solid fa-list"></i>
                     <p>Requisitos Previos</p>
-                    <p>HTML y CSS</p>
+                    <p>Ninguno</p>
                 </div>
             </div>
         </section>
@@ -169,8 +203,8 @@
             <div class="curso__tarjeta">
                 <div class="curso__tarjeta__img">
                     <img src="/multimedia/cursoIA.png" alt="foto_curso">
-                    <div class="curso__tarjeta__precio">$150.000</div>
-                    <div class="curso__tarjeta__hora"><strong>38</strong> <span
+                    <div class="curso__tarjeta__precio">$130.000</div>
+                    <div class="curso__tarjeta__hora"><strong>20</strong> <span
                             style="font-weight:400;font-size:11px">hs</span></div>
                 </div>
                 <div class="curso__tarjeta__info">
@@ -183,15 +217,15 @@
             </div>
             <div class="curso__tarjeta">
                 <div class="curso__tarjeta__img">
-                    <img src="/multimedia/cursoPoo.png" alt="foto_curso">
+                    <img src="/multimedia/cursoDestacado.png" alt="foto_curso">
                     <div class="curso__tarjeta__precio">$150.000</div>
                     <div class="curso__tarjeta__hora"><strong>38</strong> <span
                             style="font-weight:400;font-size:11px">hs</span></div>
                 </div>
                 <div class="curso__tarjeta__info">
-                    <h3>Introduccion a Java</h3>
+                    <h3>Introduccion a JavaScript</h3>
                     <div class="curso__tarjeta__links">
-                        <a href="./introJava.html">Ver Detalle</a>
+                        <a href="./detalleCurso.html">Ver Detalle</a>
                         <button type="button">Inscribirse</button>
                     </div>
                 </div>
