@@ -45,32 +45,22 @@
     <!--Inicio Main-->
     
     <h1>Inscripción</h1>
-    <ul>
-        <li>
-            <h2>Nombre</h2>
-            <form action="#" method="get">
-                <input type="text" name="Nombre" placeholder="Nombre" />
-            </form>
-        </li>
-        <li>
-            <h2>Apellido</h2>
-            <form action="#" method="get">
-                <input type="text" name="Apellido" placeholder="Apellido" />
-            </form>
-        </li>
-        <li>
-            <h2>DNI</h2>
-            <form action="#" method="get">
-                <input type="text" name="DNI" placeholder="DNI" />
-            </form>
-        </li>
-        <li>
-            <h2>Mail</h2>
-            <form action="#" method="get">
-                <input type="text" name="Mail" placeholder="Mail" />
-            </form>
-        </li>
-    </ul>
+    <form">
+        <label for="nombre">Ingrese nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+        
+        <label for="apellido">Ingrese apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido" />
+        
+        <label for="DNI">Ingrese DNI:</label>
+        <input type="number" id="DNI" name="DNI" placeholder="22333444" />
+        
+        <label for="mail">Ingrese mail:</label>
+        <input type="mail" id="nombre" name="mail" placeholder="hola@unlam.com" />
+
+        <button type="submit">Inscribirme</button>
+        <input type="submit" value="Inscribirme">
+    </form>
     <!--Fin Main-->
     <!--Inicio Footer-->
     <footer class="footer">
