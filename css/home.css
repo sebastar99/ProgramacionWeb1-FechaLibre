@@ -175,6 +175,10 @@ html{
 .inscripcion h2{
     flex: 1 1 100%;
     width: 100%;
+    font-size: 2em;
+    color: #0303039a;
+    text-decoration: solid;
+    text-shadow: 0.05em 0.05em 0.05em var(--color__newsletter);
 }
 .inscripcion-pasos {
     display: flex;
@@ -224,9 +228,13 @@ html{
     flex: 1 1 100%;
     width: 100%;
     font-style: italic;
+    font-size: 2em;
+    color: #0303039a;
+    text-decoration: solid;
+    text-shadow: 0.05em 0.05em 0.05em var(--color__newsletter);
 }
 .cursos span{
-    color: #022a5883;
+    color: #5daeffcc;
     text-decoration: underline;
     
 }
@@ -333,56 +341,62 @@ html{
 }
 
 
+.medios-de-pago h2{
+    text-align: center;
+    font-size: 2em;
+    color: #0303039a;
+    text-decoration: solid;
+    text-shadow: 0.05em 0.05em 0.05em var(--color__newsletter);
 
+}
+.medios-de-pago-contenedor{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em;
+    justify-content: center;
+    border-color: #0a0a0a;
 
+    
+}
+.tarj-credito, .tarj-debito, .transf-bancaria, .mercado-pago, .paypal{
 
+    background-color: #ffffff;
+    border-radius: 0.5em;
+    height: 10em;
+    width: 18em;
+    padding: 0.5em 0.2em 0 0.2em;
+    text-align: center;
+    
+}
 
+.tarj-credito  span, .tarj-debito span, .transf-bancaria span{
+    color: #104d8b65;
 
+}
+.tarj-credito h4, .tarj-debito h4, .transf-bancaria h4, 
+.mercado-pago h4, .paypal h4{
+    padding-top: 1em;
+    color: #073e7e4b;
+}
+.tarj-credito h3, .tarj-debito h3, .transf-bancaria h3, 
+.mercado-pago h3, .paypal h3{
+    padding-top: 0.5em;
+    margin-bottom: 1em;
+}
 
+.contenedor-bancos-tc img,
+.contenedor-bancos-td img,.contenedor-transf img, 
+.contenedor-mp img, .contenedor-ppal img {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0.2em;
+    
+}
 
 /*FIN MAIN*/
 
