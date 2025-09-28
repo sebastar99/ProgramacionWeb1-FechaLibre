@@ -197,6 +197,8 @@ html {
     cursor: pointer;
 }
 
+
+
 h2 {
     margin: 1em 0;
     font-size: 1.2em;
@@ -235,6 +237,10 @@ h2 {
     text-decoration: none;
 }
 
+.curso__inicio{
+    display: flex;
+    flex-direction: column;
+}
 
 .curso__barra__info {
     display: flex;
@@ -697,6 +703,10 @@ h2 {
         padding: 1em 0;
     }
 
+    .curso__inicio div{
+        display: flex;
+        flex-direction: column;
+    }
     /*FIN RESPONSIVE INFORMACION DEL CURSO*/
 
     /*Inicio RESPONSIVE RESEÑAS DEL CURSO*/

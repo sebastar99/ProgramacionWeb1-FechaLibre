@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ae636eecca.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="giftcard.css">
+    
+    <link rel="stylesheet" href="/css/giftcard.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
@@ -15,10 +16,14 @@
 
 <body>
 
+    <!--Inicio Header-->
     <header class="header">
         <input type="checkbox" id="toggler" class="header__toggler" aria-label="Abrir menú" />
+
         <label for="toggler" class="header__menu fa fa-bars" aria-hidden="true"></label>
-        <a href="./index.html" class="logo">FechaLibre <span>.</span></a>
+        <a href="../home.html" class="logo">FechaLibre <span>.</span></a>
+
+
         <nav class="navbar">
             <a href="#">Cursos</a>
             <a href="#">Contacto</a>
@@ -30,75 +35,81 @@
                 <button type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
             </form>
         </nav>
+
+
         <div class="header__iconos">
             <a href="" class="fas fa-heart"></a>
             <a href="" class="fas fa-shopping-cart"></a>
             <a href="" class="fas fa-user"></a>
         </div>
     </header>
+    <!--Fin Header-->
     <main>
-        <div class="container">
-            <div class="preview-column">
-                <div class="giftcard-preview">
-                    <div class="giftcard-price">$0000.-</div>
-                    <p class="giftcard-text">GIFT CARD para</p>
-                    <p class="giftcard-recipient">Destinatario</p>
+        <section>
+
+            <div class="container">
+                <div class="preview-column">
+                    <div class="giftcard-preview">
+                        <div class="giftcard-price">$0000.-</div>
+                        <p class="giftcard-text">GIFT CARD para</p>
+                        <p class="giftcard-recipient">Destinatario</p>
+                    </div>
+                    <p class="preview-title">VISTA PREVIA DE RESULTADO DE PERSONALIZACIÓN</p>
                 </div>
-                <p class="preview-title">VISTA PREVIA DE RESULTADO DE PERSONALIZACIÓN</p>
+                <div class="form-column">
+                    <h2>Personalización de Giftcard</h2>
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="recipient-name">Nombre Destinatario</label>
+                            <input type="text" id="recipient-name" placeholder="Nombre Destinatario">
+                        </div>
+                        <div class="form-group">
+                            <label>Color</label>
+                            <div class="options-group">
+                                <input type="radio" id="color1" name="color" checked>
+                                <label for="color1" class="radio-label"><div class="color-option" style="background-color: #A9A9A9;"></div></label>
+                                <input type="radio" id="color2" name="color">
+                                <label for="color2" class="radio-label"><div class="color-option" style="background-color: #808080;"></div></label>
+                                <input type="radio" id="color3" name="color">
+                                <label for="color3" class="radio-label"><div class="color-option" style="background-color: #696969;"></div></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Tamaño de fuente</label>
+                            <div class="options-group">
+                                <input type="radio" id="font20" name="fontsize"><label for="font20" class="radio-label"><span class="font-size-option">20px</span></label>
+                                <input type="radio"id="font28" name="fontsize" checked><label for="font28" class="radio-label"><span class="font-size-option">28px</span></label>
+                                <input type="radio" id="font32" name="fontsize"><label for="font32" class="radio-label"><span class="font-size-option">32px</span></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Monto $</label>
+                            <input type="number" id="amount" placeholder="Ingrese el monto">
+                        </div>
+                        <div class="form-group">
+                            <label>Ubicación</label>
+                            <div class="options-group">
+                                <input type="radio" id="loc-tl" name="location" checked>
+                                <label for="loc-tl" class="radio-label"><div class="location-option top-left"><div class="inner-box"></div></div></label>
+                                <input type="radio" id="loc-tr" name="location">
+                                <label for="loc-tr" class="radio-label"><div class="location-option top-right"><div class="inner-box"></div></div></label>
+                                <input type="radio" id="loc-c" name="location">
+                                <label for="loc-c" class="radio-label"><div class="location-option center"><div class="inner-box"></div></div></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Fondo</label>
+                            <div class="options-group">
+                                <input type="radio" id="bg1" name="background"><label for="bg1" class="radio-label"><div class="background-option" style="background-color: #D3D3D3;"></div></label>
+                                <input type="radio" id="bg2" name="background" checked><label for="bg2" class="radio-label"><div class="background-option" style="background-color: #A9A9A9;"></div></label>
+                                <input type="radio" id="bg3" name="background"><label for="bg3" class="radio-label"><div class="background-option" style="background-color: #808080;"></div></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="confirm-button">CONFIRMAR</button>
+                    </form>
+                </div>
             </div>
-            <div class="form-column">
-                <h2>Personalización de Giftcard</h2>
-                <form action="#">
-                    <div class="form-group">
-                        <label for="recipient-name">Nombre Destinatario</label>
-                        <input type="text" id="recipient-name" placeholder="Nombre Destinatario">
-                    </div>
-                    <div class="form-group">
-                        <label>Color</label>
-                        <div class="options-group">
-                            <input type="radio" id="color1" name="color" checked>
-                            <label for="color1" class="radio-label"><div class="color-option" style="background-color: #A9A9A9;"></div></label>
-                            <input type="radio" id="color2" name="color">
-                            <label for="color2" class="radio-label"><div class="color-option" style="background-color: #808080;"></div></label>
-                            <input type="radio" id="color3" name="color">
-                            <label for="color3" class="radio-label"><div class="color-option" style="background-color: #696969;"></div></label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Tamaño de fuente</label>
-                        <div class="options-group">
-                            <input type="radio" id="font20" name="fontsize"><label for="font20" class="radio-label"><span class="font-size-option">20px</span></label>
-                            <input type="radio"id="font28" name="fontsize" checked><label for="font28" class="radio-label"><span class="font-size-option">28px</span></label>
-                            <input type="radio" id="font32" name="fontsize"><label for="font32" class="radio-label"><span class="font-size-option">32px</span></label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="amount">Monto $</label>
-                        <input type="number" id="amount" placeholder="Ingrese el monto">
-                    </div>
-                    <div class="form-group">
-                        <label>Ubicación</label>
-                        <div class="options-group">
-                            <input type="radio" id="loc-tl" name="location" checked>
-                            <label for="loc-tl" class="radio-label"><div class="location-option top-left"><div class="inner-box"></div></div></label>
-                            <input type="radio" id="loc-tr" name="location">
-                            <label for="loc-tr" class="radio-label"><div class="location-option top-right"><div class="inner-box"></div></div></label>
-                            <input type="radio" id="loc-c" name="location">
-                            <label for="loc-c" class="radio-label"><div class="location-option center"><div class="inner-box"></div></div></label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Fondo</label>
-                        <div class="options-group">
-                            <input type="radio" id="bg1" name="background"><label for="bg1" class="radio-label"><div class="background-option" style="background-color: #D3D3D3;"></div></label>
-                            <input type="radio" id="bg2" name="background" checked><label for="bg2" class="radio-label"><div class="background-option" style="background-color: #A9A9A9;"></div></label>
-                            <input type="radio" id="bg3" name="background"><label for="bg3" class="radio-label"><div class="background-option" style="background-color: #808080;"></div></label>
-                        </div>
-                    </div>
-                    <button type="submit" class="confirm-button">CONFIRMAR</button>
-                </form>
-            </div>
-        </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -115,7 +126,9 @@
                 <h3>Nuestros Links</h3>
                 <a href="./index.html">Home</a>
                 <a href="./calendario.html">Cursos</a>
-                <a href="https://maps.app.goo.gl/J559o8RC6uQiyENMA" target=_blank">Mapa</a>
+                <a href="https://maps.app.goo.gl/J559o8RC6uQiyENMA" target=_blank">
+                    Mapa
+                </a>
                 <a href="#">Preguntas</a>
             </div>
             <div class="footer__datos__contenedores">
@@ -126,6 +139,7 @@
                 <a href="#">Gmail</a>
             </div>
         </div>
+
         <div class="footer__creditos">
             <p>Creado por <span>FechaLibre</span> | todos los derechos reservados.</p>
         </div>
