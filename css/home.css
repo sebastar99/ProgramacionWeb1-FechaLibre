@@ -150,36 +150,198 @@ html{
 }
 .foto-fondo .main h1{
     font-size: 3em;
-    margin-bottom: 0.5em;
-    text-shadow: 1px 1px 1px #0a0a0a;
+    margin-bottom: 0.8em;
+    text-shadow: 0.16em 0.16em 0.16em #0a0a0a;
 }
 .foto-fondo .main h1 span{
     color: var(--color__span);
     text-decoration: solid;
-    text-shadow: 1px 1px 1px #ffff;
+    text-shadow: 0.05em 0.05em 0.05em #cbf2fc;
 
 }
 .foto-fondo .main p{
     font-size: 1.5em;
     margin-bottom: 1.5em;
-    text-shadow: 1px 1px 1px #0a0a0a;
+    text-shadow: 0.16em 0.16em 0.16em #0a0a0a;
 }
-.inscipcion{
-    padding: 2em 3em;
-    width: 200em;
-    height: 30em;
-    background-color: #fff;
+.inscripcion{
+    padding: 2em;
+    width: 100%;
+    height: auto;
     text-align: center;
-    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
 }
-.inscipcion .paso-1 h2{
-    font-size: 2em;
-    margin-bottom: 0.5em;
-    padding: 2em 3 em;
-    color: #333;
-    background-color: black;
+.inscripcion h2{
+    flex: 1 1 100%;
+    width: 100%;
+}
+.inscripcion-pasos {
+    display: flex;
+    width: 100%;
+    gap: 1em; /* Espacio entre pasos */
+    margin-top: 1em;
+    justify-content: center;
+    
+}
+.paso-1,
+.paso-2, .paso-3 {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 1em;
+    color: #252525;
+    /* Opcional: para que tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+    background-color:#5499c731;
+    border-radius: 2em;
+}
+.paso-1 h3, .paso-2 h3, .paso-3 h3{
+   
+    margin-bottom: auto; /* Esto empuja el <p> hacia abajo alineando todos */
+}
+.paso-1 p, .paso-2 p, .paso-3 p{
+    margin-top: 1em;
+    text-align: justify;
+}
+
+
+.inscripcion span{
+    color:#0277BD;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-shadow: #85f2fa91 0.1em 0.1em 0.1em;
+}
+
+.cursos{
+
+     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.cursos h2{
+    flex: 1 1 100%;
+    width: 100%;
+}
+.cursos span{
+    color: #fff;
+}
+.cursos-contenedor{
+    color: #131313;
+    display: flex;
+    width: 100%;
+    gap: 10em; /* Espacio entre pasos */
+    margin-top: 1em;
+    justify-content: center;
+    margin: 0 1em 0 1em;
+    
 
 }
+.curso-1-frente{
+    background-color: #5499c731;
+    border-radius: 1em;
+    box-shadow: #85f2fa91 0.2em 0 0.2em ;
+    height: auto;
+   
+}
+.header-curso-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1em;
+    padding: 1em;
+    
+}
+.usuarios{
+    text-align: left;
+    height: auto;
+    padding-left: 1em;
+    display: flex;
+    align-items: center;
+    margin: 0;
+   
+}
+.usuarios h6{
+    font-size: 1em;
+    margin: 0;
+}
+.estrellas{
+ 
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.2em;
+    padding: 0 1em;
+    margin: 0;
+}
+.estrellas i{
+    color: #0277BD;
+}
+
+.curso-1-frente h2{
+
+}
+
+.curso-1-frente img{
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*FIN MAIN*/
 
