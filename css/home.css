@@ -145,7 +145,7 @@ html{
 .foto-fondo .main{
     text-align: center;
     color: var(--color__sombra);
-    text-shadow: 1em 1em 2em rgba(0,0,0,.10);
+    text-shadow: 1em 1em 2em #0000001a;
     padding: 10em 2em 0 2em;
 }
 .foto-fondo .main h1{
@@ -223,28 +223,55 @@ html{
 .cursos h2{
     flex: 1 1 100%;
     width: 100%;
+    font-style: italic;
 }
 .cursos span{
-    color: #fff;
+    color: #022a5883;
+    text-decoration: underline;
+    
 }
-.cursos-contenedor{
+.cursos-contenedor {
     color: #131313;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    gap: 10em; /* Espacio entre pasos */
-    margin-top: 1em;
+    height: 30em;
+    gap: 1em;
+    margin: 1em 0;
     justify-content: center;
-    margin: 0 1em 0 1em;
-    
-
 }
-.curso-1-frente{
+
+.curso-1-frente,
+.curso-2-frente,
+.curso-3-frente,
+.curso-4-frente,
+.curso-5-frente {
     background-color: #5499c731;
     border-radius: 1em;
-    box-shadow: #85f2fa91 0.2em 0 0.2em ;
+    box-shadow: 0 .5em 1em var(--color__sombra);
     height: auto;
-   
+    width: 18em;
+    min-width: 20em;
+    max-width: 30em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Para que todas tengan el mismo diseño */
 }
+
+.curso-1-frente img,
+.curso-2-frente img,
+.curso-3-frente img,
+.curso-4-frente img,
+.curso-5-frente img {
+    padding: 0.5em;
+    border-radius: 1em;
+    width: 100%;
+    height: 21em;
+    object-fit: cover;
+}
+
 .header-curso-info {
     display: flex;
     flex-direction: row;
@@ -252,43 +279,57 @@ html{
     justify-content: space-between;
     width: 100%;
     gap: 1em;
-    padding: 1em;
-    
+    padding: 1em 0.5em 0.5em 0.5em;
 }
-.usuarios{
+
+.usuarios {
     text-align: left;
     height: auto;
-    padding-left: 1em;
+    padding-left: 0;
     display: flex;
     align-items: center;
     margin: 0;
-   
 }
-.usuarios h6{
-    font-size: 1em;
+
+.usuarios h6 {
+    font-size: 0.8em;
     margin: 0;
 }
-.estrellas{
- 
+
+.estrellas {
     text-align: right;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.2em;
-    padding: 0 1em;
+    padding: 0;
     margin: 0;
 }
-.estrellas i{
+
+.estrellas i {
     color: #0277BD;
 }
 
-.curso-1-frente h2{
-
+.curso-1-frente h3,
+.curso-2-frente h3,
+.curso-3-frente h3,
+.curso-4-frente h3,
+.curso-5-frente h3 {
+      padding-top: 2em;
+    margin: 0.2em;
+    font-size: 1.1em;
+    color: #131313;
+    text-align: center;
+    font-weight: bold;
 }
-
-.curso-1-frente img{
-    padding: 0.5em;
-    border-radius: 1em;
+.caracteristicas{
+    padding: 0.5em 1em;
+    border-left: none;
+    border-radius: 2em;
+    background: var(--color__span);
+    color: #ffffffda;
+    cursor: pointer;
+    font-size: 1em;
 }
 
 
@@ -445,6 +486,60 @@ html{
     }
     header{
         padding: 2rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .cursos-contenedor {
+        gap: 1em;
+    }
+    .curso-1-frente,
+    .curso-2-frente,
+    .curso-3-frente,
+    .curso-4-frente,
+    .curso-5-frente {
+        width: 180px;
+        max-width: 200px;
+    }
+    .curso-1-frente img,
+    .curso-2-frente img,
+    .curso-3-frente img,
+    .curso-4-frente img,
+    .curso-5-frente img {
+        height: 90px;
+    }
+}
+
+@media (max-width:900px) {
+    .cursos-contenedor {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    .curso-1-frente,
+    .curso-2-frente,
+    .curso-3-frente,
+    .curso-4-frente,
+    .curso-5-frente {
+        width: 45%;
+        min-width: 160px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .cursos-contenedor {
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+    .curso-1-frente,
+    .curso-2-frente,
+    .curso-3-frente,
+    .curso-4-frente,
+    .curso-5-frente {
+        width: 90%;
+        min-width: 120px;
+        max-width: 100%;
     }
 }
 
