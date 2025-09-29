@@ -3,7 +3,7 @@
     --color__boton-hover: #0277BD;
 }
 
-    main{
+main{
     margin: 5em 0.5em;
     margin-top: 7em;
 }
@@ -13,41 +13,30 @@ h1{
     margin-bottom: 0;
 }
 
-.form{
+section{
     margin: 1em 1.5em 0;
     padding: 1em 1em 0;
 }
 
-label{
+.inscripto{
     display: block;
-    margin: 0 0 .5em;
+    text-align: center;
+    margin: 2em;
     font-size: small;
 }
 
-input{
+.volver{
     display: block;
     width: 100%;
+    text-align: center;
     padding: 1em;
     border-radius: 0.375em;
-}
-
-select{
-    display: block;
-    width: 100%;
-    padding: 1em;;
-    border-radius: 0.375em;
-}
-
-.inscribirme{
-    display: block;
-    width: 100%;
-    padding: 1em;
-    border-radius: 0.375em;
-    margin-top: 1em;
+    font-size: small;
     background-color: var(--color__boton);
-    
+    color: black;
 }
-.inscribirme:hover{
+
+.volver:hover{
     background-color: var(--color__boton-hover);
     color: white;
     cursor: pointer;

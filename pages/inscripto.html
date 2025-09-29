@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ae636eecca.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/detalleCurso.css">
-    <link rel="stylesheet" href="/css/inscripcion.css">
+    <link rel="stylesheet" href="/css/inscripto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
@@ -45,42 +45,13 @@
     <!--Inicio Main-->
     <main>
         <h1>Inscripción</h1>
-        <form action="./inscripto.html" method="POST">
-            <div class="form">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required/>
+        <section>
+            <div class="inscripto">
+                <h2>¡Gracias por elegirnos!</h2>
+                <p>Se le enviará un email de confirmación.</p>
             </div>
-
-            <div class="form">
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required/>
-            </div>
-
-            <div class="form">
-                <label for="dni">DNI:</label>
-                <input type="number" id="dni" name="dni" placeholder="22333444" required/>
-            </div>
-            
-            <div class="form">
-                <label for="email">Email:</label>
-                <input type="email" id="nombre" name="email" placeholder="hola@unlam.com" required/>
-            </div>
-            
-            <div class="form">
-                <label for="curso">Curso:</label>
-                <select id="curso" name="curso" required>
-                    <option value="curso3" selected>Desarrollo Web</option>
-                    <option value="curso3">Introducción a IA</option>
-                    <option value="curso2">Introducción a Java</option>
-                    <option value="curso1">Introducción a JavaScript</option>
-                    <option value="curso3">JavaScript Avanzado</option>
-                </select>
-            </div>
-    
-            <div class="form">
-                <button class="inscribirme" type="submit">Inscribirme</button>
-            </div>
-        </form>
+            <a class="volver" href="./inscripcion.html">Volver a la inscripción</a>
+        </section>
     </main>
     <!--Fin Main-->
     <!--Inicio Footer-->
