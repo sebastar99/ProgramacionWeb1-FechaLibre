@@ -35,9 +35,7 @@
         </div>
     </header>
     <main>  
-        <section>
-
-        </section>
+        
       <h2 class="contacto_titulo"> Contacto</h2>
      <div class="seccion_datos_oficial"> 
       <section class="seccion_datos"> 
@@ -48,15 +46,13 @@
             Uno de nuestros asesores se comunicará con vos para brindarte mayor información 
         </p>
 
-     <form class="formulario">
+     <form class="formulario"action="enviado.html" method="post" >
      
-    
-    
-     <input class="formulario_input" type="text" name="username" required placeholder="Nombre">
-     <input class="formulario_input" type="text" name="surname" required placeholder="Apellido">
+     <input class="formulario_input" type="text" name="nombre" required placeholder="Nombre">
+     <input class="formulario_input" type="text" name="apellido" required placeholder="Apellido">
      <input class="formulario_input" type="email" name="email" required placeholder="email@gmail.com">
-     <input class="formulario_input" type="tel" name="phone"  required placeholder="Telefono (formato:1143537612)">
-     <select class="formulario_input" name="course" required  >
+     <input class="formulario_input" type="tel" name="telefono"  required placeholder="Teléfono (formato:1143537612)">
+     <select class="formulario_input" name="curso" required  >
        <option value="" disabled selected> Motivo de consulta </option>
        <option value="info_curso">Información sobre un curso</option>
        <option value="inscripcion">Inscripción o fechas</option>
@@ -66,6 +62,7 @@
        <option value="otros" >Otros</option>
 
      </select>
+
      <textarea class="formulario_input formulario_consulta"name="consulta" required placeholder="Consulta..."></textarea>
      <input class="formulario_submit" type="submit" value="Enviar ">
      </form>
@@ -75,22 +72,23 @@
      <section class="seccion_contacto">
         <h3> DATOS DE CONTACTO </h3>
         <ul class=" info_contacto">
-            <li class="lista__item"> <i class="fa-solid fa-phone"></i>   Telefono
+            <li class="lista__item"> <i class="fa-solid fa-phone"></i>   Teléfono
                 <p>
                   0800-222-5367 
                 </p>
             </li>
-            <li class="lista__item"> <i class="fa-brands fa-whatsapp"></i>   WhatsApp
+            <li class="lista__item"> <i class="fa-brands fa-whatsapp"></i> <a href="https://wa.link/jj9c35" class="WhatsApp__item">  WhatsApp
                 <p>
-                    011 6200-5315
-                </p>
+                    11 6200-5319
+                    
+                </p></a>
             </li>
-            <li class="lista__item"><i class="fa-solid fa-envelope"></i>   Email
+            <li class="lista__item "><i class="fa-solid fa-envelope"></i>   Email
                 <p>
                     fechalibreconsultas@gmail.com
                 </p>
             </li>
-            <li class="lista__item"> <i class="fa-solid fa-clock"></i>   Horarios de atencion
+            <li class="lista__item"> <i class="fa-solid fa-clock"></i>   Horarios de atención
                 <p> Lunes a sábados de 
                     09:00 a 20:00hs
                     
@@ -104,7 +102,7 @@
      <section class="seccion_ubicacion">
 
         <div class="ubicacion1">
-        <h3> ¿A DONDE ESTAMOS? </h3>
+        <h3> ¿A DÓNDE ESTAMOS? </h3>
         <a href="https://www.google.com/maps/dir//Florencio+Varela+1903,+B1754+San+Justo,+Provincia+de+Buenos+Aires/@-34.6706054,-58.7421205,11.75z/data=!4m8!4m7!1m0!1m5!1m1!1s0x95bcc62cc3ef7083:0x8867107f425fade5!2m2!1d-58.5628052!2d-34.6707576?entry=ttu&g_ep=EgoyMDI1MDkyMi4wIKXMDSoASAFQAw%3D%3D" class="boton">SABER MAS</a>
         </div>
 

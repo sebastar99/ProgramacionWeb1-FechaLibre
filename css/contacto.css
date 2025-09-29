@@ -153,11 +153,11 @@ html {
     color: #000000;
     justify-content: center;
     margin-top: 3em;
-    padding: 20px 10px;
+    padding: 1.25em 0.625em;
 }
 h3{
     text-align: center;
-    padding: 15px 0px;
+    padding: 0.9375em 0;
 }
 .seccion_datos_oficial{ 
     display: flex;    
@@ -178,7 +178,7 @@ h3{
     
 }
 p{
-    padding: 10px 5px;
+    padding: 0.625em 0.3125em;
 }
 .completa_el_form{
     text-align: center;
@@ -194,7 +194,7 @@ p{
     background-color: whitesmoke;
     border-radius: 3px;
     margin: 2%;
-    padding: 5px 3px
+    padding: 0.3125em 0.1875em
 }
  .formulario_submit{
     width: 30%;
@@ -221,13 +221,14 @@ p{
 
 .formulario_consulta{
     min-width: 100%;
-    min-height: 50px;
+    min-height: 4em;
     resize: none;
     border: 1px solid black
 }
+
 .seccion_contacto{
     
-    width: 400px;
+    width: 30em;
     height: auto;
     text-align:left;
     
@@ -239,12 +240,19 @@ p{
 .lista__item{
     margin: 4%;
 }
+.WhatsApp__item{
+    text-decoration: none;
+    color: #000000;
 
+}
+.WhatsApp__item:hover {
+  color: #808080; 
+}
 .seccion_ubicacion {
   display: flex;
   background-color: #1565c0d5; 
   color: white;
-  padding: 0 10px;
+  padding: 0 0.625em;
   align-items: center;
   justify-content: space-between;
   width: 70%;
@@ -258,14 +266,14 @@ p{
 }
 
 .ubicacion1 h4 {
-  font-size: 24px;
+  font-size: 1.5em;
   
 }
 
 
 .boton {
   display: flex;
-  padding: 10px 30px;
+  padding: 0.625em 1.875em;
   border: 2px solid white;
   color: white;
   text-decoration: none;
@@ -284,13 +292,13 @@ p{
 .ubicacion2 {
   flex: 1;
   max-width: 50%;
-  padding: 20px;
+  padding: 1.25em;
   
 }
 
 .ubicacion2 iframe {
   width: 100%;
-  height: 350px;
+  height: 22em;
   border: 0;
 }
 /*INICIO FOOTER*/
