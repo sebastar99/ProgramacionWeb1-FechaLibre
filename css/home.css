@@ -9,7 +9,6 @@
 
 body {
     background-color: var(--color__principal);
-    height: 100vh;
 }
 
 * {
@@ -204,7 +203,6 @@ html {
     display: flex;
     width: 100%;
     gap: 1em;
-    /* Espacio entre pasos */
     margin-top: 1em;
     justify-content: center;
 
@@ -217,7 +215,6 @@ html {
     min-width: 0;
     padding: 1em;
     color: #252525;
-    /* Opcional: para que tengan la misma altura */
     display: flex;
     flex-direction: column;
     background-color: #5499c731;
@@ -227,9 +224,7 @@ html {
 .paso-1 h3,
 .paso-2 h3,
 .paso-3 h3 {
-
     margin-bottom: auto;
-    /* Esto empuja el <p> hacia abajo alineando todos */
 }
 
 .paso-1 p,
@@ -272,14 +267,13 @@ html {
 }
 
 .cursos-contenedor {
-    color: #131313;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
     width: 100%;
-    height: 30em;
-    gap: 1em;
-    margin: 1em 0;
-    justify-content: center;
+    margin: 1em auto;
+    height: auto;
+
 }
 
 .curso-1-frente,
@@ -287,18 +281,20 @@ html {
 .curso-3-frente,
 .curso-4-frente,
 .curso-5-frente {
+    width: 100%;
+    max-width: 420px;
+    /* opcional: límite en pantallas grandes */
+    min-width: 0;
+    /* importante para que el grid ajuste las cajas */
+    height: auto;
+    /* quitar alturas rígidas */
+    margin: 0 auto;
     background-color: #5499c731;
     border-radius: 1em;
     box-shadow: 0 .5em 1em var(--color__sombra);
-    height: auto;
-    width: 18em;
-    min-width: 20em;
-    max-width: 30em;
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Para que todas tengan el mismo diseño */
 }
 
 .curso-1-frente img,
@@ -306,11 +302,11 @@ html {
 .curso-3-frente img,
 .curso-4-frente img,
 .curso-5-frente img {
-    padding: 0.5em;
-    border-radius: 1em;
     width: 100%;
-    height: 21em;
+    height: auto;
+    /* deja que la imagen escale */
     object-fit: cover;
+    aspect-ratio: 16/9;
 }
 
 .header-curso-info {
@@ -378,6 +374,8 @@ html {
 .medios-de-pago h2 {
     text-align: center;
     font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     color: #0303039a;
     text-decoration: solid;
     text-shadow: 0.05em 0.05em 0.05em var(--color__newsletter);
@@ -385,15 +383,11 @@ html {
 }
 
 .medios-de-pago-contenedor {
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    padding: 1em;
-    justify-content: center;
-    border-color: #0a0a0a;
-
-
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .tarj-credito,
@@ -453,13 +447,13 @@ html {
 /*FIN MAIN*/
 
 /*INICIO FOOTER*/
-.footer .footer__datos {
+.footer__datos {
+    margin-top: 8em;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
-
 
 .footer .footer__datos .footer__datos__contenedores h3 {
     color: #333;
@@ -472,7 +466,6 @@ html {
     color: #666;
     padding: 0.5em 0;
 }
-
 
 .footer .footer__datos .footer__datos__contenedores a {
     display: block;
@@ -498,6 +491,7 @@ html {
 .footer .footer__creditos span {
     color: var(--color__span);
 }
+
 
 /*FIN FOOTER*/
 
@@ -582,66 +576,96 @@ html {
         margin-left: 0.5em;
         font-size: 0.95em;
     }
-}
 
-/*HASTA ACA*/
-/*
-@media (max-width:1200px) {
-    .cursos-contenedor {
-        gap: 1em;
+    .cursos-contenedor,
+    .medios-de-pago-contenedor {
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+        width: calc(100% - 2rem);
+        /* deja 1rem espacio a cada lado */
+        margin: 0.8rem auto;
+        padding: 0 1rem;
+        /* evita que las tarjetas lleguen hasta el borde */
+        box-sizing: border-box;
+        height: auto;
+        /* importantísimo: NO height:100% */
     }
 
+    /* Tarjetas a todo ancho del grid (sin min-width que las forcen) */
     .curso-1-frente,
     .curso-2-frente,
     .curso-3-frente,
     .curso-4-frente,
     .curso-5-frente {
-        width: 180px;
-        max-width: 200px;
+        max-width: none;
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding-bottom: 0.6rem;
     }
 
+    /* Ajustes de imagen en móvil para evitar que estiren la tarjeta */
     .curso-1-frente img,
     .curso-2-frente img,
     .curso-3-frente img,
     .curso-4-frente img,
     .curso-5-frente img {
-        height: 90px;
+        height: auto;
+        /* NUNCA height fijo en px/ems en móvil */
+        max-height: 40vh;
+        /* opcional: limita la altura relativa a la pantalla */
     }
 }
 
-@media (max-width:900px) {
-    .cursos-contenedor {
-        flex-wrap: wrap;
-        gap: 1em;
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
     }
 
+    header {
+        padding: 2em;
+    }
+
+    .cursos-contenedor,
+    .medios-de-pago-contenedor {
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+        width: calc(100% - 2rem);
+        /* deja 1rem espacio a cada lado */
+        margin: 0.8rem auto;
+        padding: 0 1rem;
+        /* evita que las tarjetas lleguen hasta el borde */
+        box-sizing: border-box;
+        height: auto;
+        /* importantísimo: NO height:100% */
+    }
+
+    /* Tarjetas a todo ancho del grid (sin min-width que las forcen) */
     .curso-1-frente,
     .curso-2-frente,
     .curso-3-frente,
     .curso-4-frente,
     .curso-5-frente {
-        width: 45%;
-        min-width: 160px;
-        max-width: 100%;
-    }
-}
-
-@media (max-width:600px) {
-    .cursos-contenedor {
-        flex-direction: column;
-        gap: 1em;
-        align-items: center;
+        max-width: none;
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding-bottom: 0.6rem;
     }
 
-    .curso-1-frente,
-    .curso-2-frente,
-    .curso-3-frente,
-    .curso-4-frente,
-    .curso-5-frente {
-        width: 90%;
-        min-width: 120px;
-        max-width: 100%;
+    /* Ajustes de imagen en móvil para evitar que estiren la tarjeta */
+    .curso-1-frente img,
+    .curso-2-frente img,
+    .curso-3-frente img,
+    .curso-4-frente img,
+    .curso-5-frente img {
+        height: auto;
+        /* NUNCA height fijo en px/ems en móvil */
+        max-height: 40vh;
+        /* opcional: limita la altura relativa a la pantalla */
     }
+
+
 }
 
 /*FIN RESPONSIVE*/
