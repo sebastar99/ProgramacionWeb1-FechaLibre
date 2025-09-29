@@ -206,6 +206,7 @@ label{
  .formulario_submit{
     width: 30%;
     height: 10%;
+    padding: 0.500em 0;
     text-align: center;
     border: 1px solid black;
     border-radius: 50px;

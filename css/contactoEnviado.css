@@ -1,0 +1,43 @@
+:root{
+    --color__boton: #5499c7;
+    --color__boton-hover: #0277BD;
+}
+
+main{
+    margin: 5em 0.5em;
+    margin-top: 7em;
+}
+
+h1{
+    margin: 1em;
+    margin-bottom: 0;
+}
+
+section{
+    margin: 1em 1.5em 0;
+    padding: 1em 1em 0;
+}
+
+.inscripto{
+    display: block;
+    text-align: center;
+    margin: 2em;
+    font-size: small;
+}
+
+.volver{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    border-radius: 0.375em;
+    font-size: small;
+    background-color: var(--color__boton);
+    color: black;
+}
+
+.volver:hover{
+    background-color: var(--color__boton-hover);
+    color: white;
+    cursor: pointer;
+}
