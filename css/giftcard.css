@@ -283,7 +283,7 @@ input[type="number"] {
 }
 
 input[type="radio"]:checked+.radio-label .color-option {
-    border-color: var(--color__header);
+    border-color: var(--color__newsletter);
 }
 
 .font-size-option {
@@ -292,7 +292,7 @@ input[type="radio"]:checked+.radio-label .color-option {
 }
 
 input[type="radio"]:checked+.radio-label .font-size-option {
-    color: var(--color__header);
+    color: var(--color__newsletter);
     font-weight: bold;
 }
 
@@ -316,7 +316,7 @@ input[type="radio"]:checked+.radio-label .font-size-option {
 .location-option.center .inner-box { top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
 input[type="radio"]:checked+.radio-label .location-option {
-    border-color: var(--color__header);
+    border-color: var(--color__principal);
     background-color: var(--color__sombra);
 }
 
@@ -328,7 +328,7 @@ input[type="radio"]:checked+.radio-label .location-option {
 }
 
 input[type="radio"]:checked+.radio-label .background-option {
-    border-color: var(--color__header);
+    border-color: var(--color__newsletter);
 }
 
 .confirm-button {
