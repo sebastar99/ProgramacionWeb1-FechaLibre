@@ -640,6 +640,12 @@ html {
         /* importantísimo: NO height:100% */
     }
 
+    .medios-de-pago-contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     /* Tarjetas a todo ancho del grid (sin min-width que las forcen) */
     .curso-1-frente,
     .curso-2-frente,
@@ -660,9 +666,6 @@ html {
     .curso-4-frente img,
     .curso-5-frente img {
         height: auto;
-        /* NUNCA height fijo en px/ems en móvil */
-        max-height: 40vh;
-        /* opcional: limita la altura relativa a la pantalla */
     }
 
 
