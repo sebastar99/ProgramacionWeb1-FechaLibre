@@ -142,40 +142,259 @@ html{
 .foto-fondo .main{
     text-align: center;
     color: var(--color__sombra);
-    text-shadow: 1em 1em 2em rgba(0,0,0,.10);
+    text-shadow: 1em 1em 2em #0000001a;
     padding: 10em 2em 0 2em;
 }
 .foto-fondo .main h1{
     font-size: 3em;
-    margin-bottom: 0.5em;
-    text-shadow: 1px 1px 1px #0a0a0a;
+    margin-bottom: 0.8em;
+    color: white;
+    text-shadow: 0.16em 0.16em 0.16em #0a0a0a;
 }
 .foto-fondo .main h1 span{
     color: var(--color__span);
     text-decoration: solid;
-    text-shadow: 1px 1px 1px #ffff;
+    text-shadow: 0.05em 0.05em 0.05em #cbf2fc;
 
 }
 .foto-fondo .main p{
     font-size: 1.5em;
     margin-bottom: 1.5em;
-    text-shadow: 1px 1px 1px #0a0a0a;
+    color: white;
+    text-shadow: 0.16em 0.16em 0.16em #0a0a0a;
 }
-.inscipcion{
-    padding: 2em 3em;
-    width: 200em;
-    height: 30em;
-    background-color: #fff;
+.inscripcion{
+    padding: 2em;
+    width: 100%;
+    height: auto;
     text-align: center;
-    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
 }
-.inscipcion .paso-1 h2{
+.inscripcion h2{
+    flex: 1 1 100%;
+    width: 100%;
     font-size: 2em;
-    margin-bottom: 0.5em;
-    padding: 2em 3 em;
-    color: #333;
-    background-color: black;
+    color: #0303039a;
+    text-decoration: solid;
+    text-shadow: 0.05em 0.05em 0.05em var(--color__newsletter);
+}
+.inscripcion-pasos {
+    display: flex;
+    width: 100%;
+    gap: 1em; /* Espacio entre pasos */
+    margin-top: 1em;
+    justify-content: center;
+    
+}
+.paso-1,
+.paso-2, .paso-3 {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 1em;
+    color: #252525;
+    /* Opcional: para que tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+    background-color:#5499c731;
+    border-radius: 2em;
+}
+.paso-1 h3, .paso-2 h3, .paso-3 h3{
+   
+    margin-bottom: auto; /* Esto empuja el <p> hacia abajo alineando todos */
+}
+.paso-1 p, .paso-2 p, .paso-3 p{
+    margin-top: 1em;
+    text-align: justify;
+}
 
+
+.inscripcion span{
+    color:#0277BD;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-shadow: #85f2fa91 0.1em 0.1em 0.1em;
+}
+
+.cursos{
+
+     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.cursos h2{
+    flex: 1 1 100%;
+    width: 100%;
+    font-style: italic;
+    font-size: 2em;
+    color: #0303039a;
+    text-decoration: solid;
+    text-shadow: 0.05em 0.05em 0.05em var(--color__newsletter);
+}
+.cursos span{
+    color: #5daeffcc;
+    text-decoration: underline;
+    
+}
+.cursos-contenedor {
+    color: #131313;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30em;
+    gap: 1em;
+    margin: 1em 0;
+    justify-content: center;
+}
+
+.curso-1-frente,
+.curso-2-frente,
+.curso-3-frente,
+.curso-4-frente,
+.curso-5-frente {
+    background-color: #5499c731;
+    border-radius: 1em;
+    box-shadow: 0 .5em 1em var(--color__sombra);
+    height: auto;
+    width: 18em;
+    min-width: 20em;
+    max-width: 30em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Para que todas tengan el mismo diseño */
+}
+
+.curso-1-frente img,
+.curso-2-frente img,
+.curso-3-frente img,
+.curso-4-frente img,
+.curso-5-frente img {
+    padding: 0.5em;
+    border-radius: 1em;
+    width: 100%;
+    height: 21em;
+    object-fit: cover;
+}
+
+.header-curso-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1em;
+    padding: 1em 0.5em 0.5em 0.5em;
+}
+
+.usuarios {
+    text-align: left;
+    height: auto;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.usuarios h6 {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.estrellas {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.2em;
+    padding: 0;
+    margin: 0;
+}
+
+.estrellas i {
+    color: #0277BD;
+}
+
+.curso-1-frente h3,
+.curso-2-frente h3,
+.curso-3-frente h3,
+.curso-4-frente h3,
+.curso-5-frente h3 {
+      padding-top: 2em;
+    margin: 0.2em;
+    font-size: 1.1em;
+    color: #131313;
+    text-align: center;
+    font-weight: bold;
+}
+.caracteristicas{
+    padding: 0.5em 1em;
+    border-left: none;
+    border-radius: 2em;
+    background: var(--color__span);
+    color: #ffffffda;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+.medios-de-pago h2{
+    text-align: center;
+    font-size: 2em;
+    color: #0303039a;
+    text-decoration: solid;
+    text-shadow: 0.05em 0.05em 0.05em var(--color__newsletter);
+
+}
+.medios-de-pago-contenedor{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em;
+    justify-content: center;
+    border-color: #0a0a0a;
+
+    
+}
+.tarj-credito, .tarj-debito, .transf-bancaria, .mercado-pago, .paypal{
+
+    background-color: #ffffff;
+    border-radius: 0.5em;
+    height: 10em;
+    width: 18em;
+    padding: 0.5em 0.2em 0 0.2em;
+    text-align: center;
+    
+}
+
+.tarj-credito  span, .tarj-debito span, .transf-bancaria span{
+    color: #104d8b65;
+
+}
+.tarj-credito h4, .tarj-debito h4, .transf-bancaria h4, 
+.mercado-pago h4, .paypal h4{
+    padding-top: 1em;
+    color: #073e7e4b;
+}
+.tarj-credito h3, .tarj-debito h3, .transf-bancaria h3, 
+.mercado-pago h3, .paypal h3{
+    padding-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.contenedor-bancos-tc img,
+.contenedor-bancos-td img,.contenedor-transf img, 
+.contenedor-mp img, .contenedor-ppal img {
+
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0.2em;
+    
 }
 
 /*FIN MAIN*/
@@ -280,6 +499,60 @@ html{
     }
     header{
         padding: 2rem;
+    }
+}
+
+@media (max-width:1200px) {
+    .cursos-contenedor {
+        gap: 1em;
+    }
+    .curso-1-frente,
+    .curso-2-frente,
+    .curso-3-frente,
+    .curso-4-frente,
+    .curso-5-frente {
+        width: 180px;
+        max-width: 200px;
+    }
+    .curso-1-frente img,
+    .curso-2-frente img,
+    .curso-3-frente img,
+    .curso-4-frente img,
+    .curso-5-frente img {
+        height: 90px;
+    }
+}
+
+@media (max-width:900px) {
+    .cursos-contenedor {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    .curso-1-frente,
+    .curso-2-frente,
+    .curso-3-frente,
+    .curso-4-frente,
+    .curso-5-frente {
+        width: 45%;
+        min-width: 160px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .cursos-contenedor {
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+    .curso-1-frente,
+    .curso-2-frente,
+    .curso-3-frente,
+    .curso-4-frente,
+    .curso-5-frente {
+        width: 90%;
+        min-width: 120px;
+        max-width: 100%;
     }
 }
 
