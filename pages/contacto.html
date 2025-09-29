@@ -46,28 +46,39 @@
             Uno de nuestros asesores se comunicará con vos para brindarte mayor información 
         </p>
 
-     <form class="formulario"action="enviado.html" method="post" >
-     
-     <input class="formulario_input" type="text" name="nombre" required placeholder="Nombre">
-     <input class="formulario_input" type="text" name="apellido" required placeholder="Apellido">
-     <input class="formulario_input" type="email" name="email" required placeholder="email@gmail.com">
-     <input class="formulario_input" type="tel" name="telefono"  required placeholder="Teléfono (formato:1143537612)">
-     <select class="formulario_input" name="curso" required  >
-       <option value="" disabled selected> Motivo de consulta </option>
-       <option value="info_curso">Información sobre un curso</option>
-       <option value="inscripcion">Inscripción o fechas</option>
-       <option value="pago">Pagos o facturación</option>
-       <option value="tecnico">Problemas técnicos</option>
-       <option value="asesoramiento">Asesoramiento para elegir curso</option>
-       <option value="otros" >Otros</option>
+     <section>
+  <form class="formulario" action="enviado.html" method="post">
 
-     </select>
+    <label for="nombre">Nombre:</label>
+    <input class="formulario_input" type="text" id="nombre" name="nombre" required placeholder="ej: Candela">
 
-     <textarea class="formulario_input formulario_consulta"name="consulta" required placeholder="Consulta..."></textarea>
-     <input class="formulario_submit" type="submit" value="Enviar ">
-     </form>
-     </section>
-   
+    <label for="apellido">Apellido:</label>
+    <input class="formulario_input" type="text" id="apellido" name="apellido" required placeholder="ej: Gutierrez">
+
+    <label for="email">Email:</label>
+    <input class="formulario_input" type="email" id="email" name="email" required placeholder="email@gmail.com">
+
+    <label for="telefono">Teléfono:</label>
+    <input class="formulario_input" type="tel" id="telefono" name="telefono" required placeholder="Teléfono (formato:1143537612)">
+
+    <label for="curso">Motivo de consulta:</label>
+    <select class="formulario_input" id="curso" name="curso" required>
+      <option value="" disabled selected> Motivo de consulta </option>
+      <option value="info_curso">Información sobre un curso</option>
+      <option value="inscripcion">Inscripción o fechas</option>
+      <option value="pago">Pagos o facturación</option>
+      <option value="tecnico">Problemas técnicos</option>
+      <option value="asesoramiento">Asesoramiento para elegir curso</option>
+      <option value="otros">Otros</option>
+    </select>
+
+    <label for="consulta">Consulta:</label>
+    <textarea class="formulario_input formulario_consulta" id="consulta" name="consulta" required placeholder="Deje aquí su mensaje..."></textarea>
+
+    <input class="formulario_submit" type="submit" value="Enviar">
+  </form>
+ </section>
+
 
      <section class="seccion_contacto">
         <h3> DATOS DE CONTACTO </h3>
