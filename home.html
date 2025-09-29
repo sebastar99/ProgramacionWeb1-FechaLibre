@@ -16,27 +16,26 @@
 <body>
     <!--Inicio Header-->
     <header class="header">
+        <input type="checkbox" id="toggler" class="header__toggler" aria-label="Abrir menú" />
 
-        <input type="checkbox" name="" id="toggler">
-        <label for="toggler" class="fa fa-bars"></label>
+        <label for="toggler" class="header__menu fa fa-bars" aria-hidden="true"></label>
         <a href="/home.html" class="logo">FechaLibre <span>.</span></a>
 
 
         <nav class="navbar">
-            <a href="#lista__cursos">Cursos</a>
-            <a href="/pages/contacto.html">Contacto</a>
-            <a href="/pages/giftcard.html">GiftCards</a>
-            <a href="/pages/calendario.html">Calendario</a>
+            <a href="#lista__curso">Cursos</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./giftcard.html">GiftCards</a>
+            <a href="./calendario.html">Calendario</a>
+
+            <form class="header__buscador" action="#" method="get">
+                <input type="text" name="q" placeholder="Buscar..." />
+                <button type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
+            </form>
         </nav>
 
-        <form class="search-bar" action="#" method="get">
-            <input type="text" placeholder="Buscar..." name="q">
-            <button type="submit">
-                <i class="fas fa-search"></i>
-            </button>
-        </form>
 
-        <div class="icon">
+        <div class="header__iconos">
             <a href="" class="fas fa-heart"></a>
             <a href="" class="fas fa-shopping-cart"></a>
             <a href="" class="fas fa-user"></a>
