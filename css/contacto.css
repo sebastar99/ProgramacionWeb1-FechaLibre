@@ -211,8 +211,10 @@ p {
     border: 1px solid black;
     border-radius: 50px;
     color: #ffffff;
-    background-color: #5499c7
+    background-color: #5499c7;
+    padding: 0.500em
 }
+
 
 .formulario_submit:hover {
     background-color: white;
@@ -353,7 +355,7 @@ p {
 /*FIN FOOTER*/
 
 /*INICIO RESPONSIVE*/
-@media (max-width:991px) {
+@media (max-width:60em) {
     html {
         font-size: 70%;
     }
@@ -364,7 +366,7 @@ p {
 
 }
 
-@media (max-width: 778px) {
+@media (max-width: 47em) {
 
     /*INICIO RESPONSIVE HEADER*/
     .header .header__menu {
@@ -493,7 +495,7 @@ p {
     }
 }
 
-@media (max-width:450px) {
+@media (max-width:28em) {
     html {
         font-size: 50%;
     }

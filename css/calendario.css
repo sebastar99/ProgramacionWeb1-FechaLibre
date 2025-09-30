@@ -188,8 +188,8 @@ html {
 .calendario__mes {
     background: white;
     padding: 1em;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.1);
 }
 
 .calendario__mes h2 {
@@ -209,13 +209,13 @@ html {
 
 .calendario__semanas div {
     font-weight: bold;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #ccc;
+    padding: 0.5em 0;
+    border-bottom: 0.0625em solid #ccc;
 }
 
 .calendario__dias div {
-    padding: 0.75em 0.500em;
-    border: 1px solid #ddd;
+    padding: 0.75em 0.5em;
+    border: 0.0625em solid #ddd;
     min-height: 6.25em;
     display: flex;
     flex-direction: column;
@@ -291,7 +291,7 @@ html {
 /*FIN FOOTER*/
 
 /*INICIO RESPONSIVE*/
-@media (max-width:991px) {
+@media (max-width:60em) {
     html {
         font-size: 70%;
     }
@@ -393,7 +393,7 @@ html {
 
 }
 
-@media (max-width:450px) {
+@media (max-width:28em) {
     html {
         font-size: 50%;
     }
