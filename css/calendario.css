@@ -168,7 +168,7 @@ html {
     font-family: 'SUSE Mono", sans-serif';
 }
 
-.calendario__titulo p{
+.calendario__titulo p {
     font-size: 2em;
 }
 
@@ -208,9 +208,14 @@ html {
 }
 
 .calendario__semanas div {
-    font-weight: bold;
-    padding: 0.5em 0;
-    border-bottom: 0.0625em solid #ccc;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    text-align: center;
+    vertical-align: top;
+    padding: 0.3em;
+    font-size: 0.9em;
+    line-height: 1.2;
 }
 
 .calendario__dias div {
@@ -243,12 +248,23 @@ html {
 
 
 /*INICIO FOOTER*/
+.footer {
+    margin-top: 2em;
+}
+
 .footer__datos {
-    margin-top: 8em;
+
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    border-top: .1em solid rgba(0, 0, 0, .3);
+}
+
+.footer .footer__datos .footer__datos__contenedores h3 {
+    margin-top: 1em;
+    color: #333;
+    font-size: 1em;
+    padding: 1em 0;
 }
 
 .footer .footer__datos .footer__datos__contenedores h3 {
@@ -402,12 +418,26 @@ html {
         padding: 2em;
     }
 
+    .calendario__titulo{
+        width: 90%;
+        margin: 1em auto;
+        font-size: 0.700em;
+        
+    }
+
     .calendario__año {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2em;
         width: 90%;
         margin: 0 auto;
+    }
+
+    .calendario__mes div{
+        font-size: 0.75em;
+        /* Reduce tamaño del texto */
+        padding: 0.2em;
+        /* Reduce espacio interno */
     }
 }
 

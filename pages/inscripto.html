@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
         rel="stylesheet">
-    <title>Inscripción</title>
+    <title>Inscripción Completada</title>
 </head>
 <body>
     <!--Inicio Header-->
@@ -29,7 +29,14 @@
             <a href="./calendario.html">Calendario</a>
 
             <form class="header__buscador" action="#" method="get">
-                <input type="text" name="q" placeholder="Buscar..." />
+                <input type="text" name="q" placeholder="Buscar..." list="cursos"/>
+                <datalist id="cursos">
+                    <option value="Introduccion a JavaScript"></option>
+                    <option value="Introduccion a la IA"></option>
+                    <option value="Introduccion a Java"></option>
+                    <option value="Desarrollo web"></option>
+                    <option value="JavaScript avanzado"></option>
+                </datalist>
                 <button type="submit"><i class="fas fa-search" aria-hidden="true"></i></button>
             </form>
         </nav>

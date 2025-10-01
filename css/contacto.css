@@ -307,12 +307,23 @@ p {
 }
 
 /*INICIO FOOTER*/
+.footer{
+    margin-top: 2em;
+}
+
 .footer__datos {
-    margin-top: 8em;
+    
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    border-top: .1em solid rgba(0, 0, 0, .3);
+}
+
+.footer .footer__datos .footer__datos__contenedores h3 {
+    margin-top: 1em;
+    color: #333;
+    font-size: 1em;
+    padding: 1em 0;
 }
 
 .footer .footer__datos .footer__datos__contenedores h3 {
