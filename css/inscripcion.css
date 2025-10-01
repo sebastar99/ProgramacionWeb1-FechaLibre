@@ -12,7 +12,7 @@ body {
 
 main {
     width: 90%;
-    max-width: 358px;
+    max-width: 22.375em;
     margin-top: 6em;
     background-color: white;
     padding: 2em;
@@ -68,7 +68,7 @@ footer {
 @media (min-width: 28em) {
     main {
         width: 80%;
-        max-width: 525px;
+        max-width: 32.815em;
         margin-top: 8em;
     }
 }

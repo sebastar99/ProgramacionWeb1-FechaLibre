@@ -12,7 +12,7 @@ body {
 
 main {
     width: 90%;
-    max-width: 725px;
+    max-width: 45.3125em;
     margin-top: 6em;
     background-color: white;
     padding: 2em;
@@ -27,7 +27,7 @@ section {
 .volver {
     display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 16em;
     padding: 1em;
     border-radius: 0.5em;
     background-color: var(--color__boton);
