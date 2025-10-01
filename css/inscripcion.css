@@ -3,6 +3,13 @@
     --color__boton-hover: #0277bd;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 main {
     width: 90%;
     max-width: 22.375em;
