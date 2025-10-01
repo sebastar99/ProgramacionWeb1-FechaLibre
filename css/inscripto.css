@@ -1,51 +1,46 @@
-body{
+:root {
+    --color__boton: #5499c7;
+    --color__boton-hover: #0277bd;
+}
+
+body {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-main{
-    flex:1;
+main {
+    width: 90%;
+    max-width: 725px;
+    margin-top: 6em;
+    background-color: white;
+    padding: 2em;
+    border-radius: 0.5em;
 }
 
-:root{
-    --color__boton: #5499c7;
-    --color__boton-hover: #0277BD;
-}
-
-main{
-    margin: 7em 0.5em 5em;
-}
-
-h1{
-    margin: 1em;
-    margin-bottom: 0;
-}
-
-section{
-    margin: 1em 1.5em 0;
-    padding: 1em 1em 0;
-}
-
-.inscripto{
-    display: block;
+section {
+    margin: 2em 2.5em 0;
     text-align: center;
-    margin: 2em;
-    font-size: small;
 }
 
-.volver{
+.volver {
     display: block;
     width: 100%;
-    text-align: center;
+    max-width: 400px;
     padding: 1em;
-    border-radius: 0.375em;
-    font-size: small;
+    border-radius: 0.5em;
     background-color: var(--color__boton);
     color: black;
+    margin: 2em auto 0;
 }
 
-.volver:hover{
+.volver:hover {
     background-color: var(--color__boton-hover);
     color: white;
     cursor: pointer;
+}
+
+footer {
+    width: 100%;
 }

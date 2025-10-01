@@ -12,6 +12,7 @@ body {
 
 main {
     width: 90%;
+    max-width: 358px;
     margin-top: 6em;
     background-color: white;
     padding: 2em;
@@ -29,7 +30,6 @@ form div {
 label {
     display: block;
     margin-bottom: 0.5em;
-    font-size: small;
 }
 
 input {
@@ -61,13 +61,14 @@ select {
     cursor: pointer;
 }
 
-.footer__datos {
-    margin-top: 2em;
+footer {
+    width: 100%;
 }
 
 @media (min-width: 28em) {
     main {
         width: 80%;
+        max-width: 525px;
         margin-top: 8em;
     }
 }
@@ -95,7 +96,8 @@ select {
 @media (min-width: 60em) {
     main {
         width: 60%;
-        margin-top: 8em;
+        min-width: 672px;
         max-width: 60em;
+        margin-top: 8em;
     }
 }
