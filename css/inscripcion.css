@@ -3,21 +3,13 @@
     --color__boton-hover: #0277bd;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
 main {
     width: 90%;
     max-width: 22.375em;
-    margin-top: 6em;
     background-color: white;
     padding: 2em;
     border-radius: 0.5em;
-    margin: 0 auto;
+    margin: 6em auto;
 }
 
 main form {
@@ -33,7 +25,7 @@ label {
     margin-bottom: 0.5em;
 }
 
-input {
+form input {
     display: block;
     width: 100%;
     padding: 1em;
