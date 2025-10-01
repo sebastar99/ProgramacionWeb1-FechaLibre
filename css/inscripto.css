@@ -1,11 +1,19 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex:1;
+}
+
 :root{
     --color__boton: #5499c7;
     --color__boton-hover: #0277BD;
 }
 
 main{
-    margin: 5em 0.5em;
-    margin-top: 7em;
+    margin: 7em 0.5em 5em;
 }
 
 h1{

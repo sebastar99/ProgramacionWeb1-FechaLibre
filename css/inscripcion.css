@@ -1,54 +1,101 @@
-:root{
+:root {
     --color__boton: #5499c7;
-    --color__boton-hover: #0277BD;
+    --color__boton-hover: #0277bd;
 }
 
-    main{
-    margin: 5em 0.5em;
-    margin-top: 7em;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-h1{
-    margin: 1em;
-    margin-bottom: 0;
+main {
+    width: 90%;
+    margin-top: 6em;
+    background-color: white;
+    padding: 2em;
+    border-radius: 0.5em;
 }
 
-.form{
-    margin: 1em 1.5em 0;
-    padding: 1em 1em 0;
+main form {
+    padding: 0 1em;
 }
 
-label{
+form div {
+    margin-top: 2em;
+}
+
+label {
     display: block;
-    margin: 0 0 .5em;
+    margin-bottom: 0.5em;
     font-size: small;
 }
 
-input{
+input {
     display: block;
     width: 100%;
     padding: 1em;
-    border-radius: 0.375em;
+    border: 1px solid lightgray;
+    border-radius: 0.5em;
 }
 
-select{
-    display: block;
-    width: 100%;
-    padding: 1em;;
-    border-radius: 0.375em;
-}
-
-.inscribirme{
+select {
     display: block;
     width: 100%;
     padding: 1em;
-    border-radius: 0.375em;
-    margin-top: 1em;
+    border: 1px solid lightgray;
+    border-radius: 0.5em;
+}
+
+.inscribirme {
+    display: block;
+    width: 100%;
+    padding: 1em;
     background-color: var(--color__boton);
-    
+    border-radius: 0.5em;
 }
-.inscribirme:hover{
+.inscribirme:hover {
     background-color: var(--color__boton-hover);
     color: white;
     cursor: pointer;
+}
+
+.footer__datos {
+    margin-top: 2em;
+}
+
+@media (min-width: 28em) {
+    main {
+        width: 80%;
+        margin-top: 8em;
+    }
+}
+
+@media (min-width: 47em) {
+    main {
+        width: 70%;
+        margin-top: 8em;
+    }
+
+    main form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    form div {
+        width: 50%;
+        margin-top: 2em;
+        padding: 0 1em;
+    }
+}
+
+@media (min-width: 60em) {
+    main {
+        width: 60%;
+        margin-top: 8em;
+        max-width: 60em;
+    }
 }
