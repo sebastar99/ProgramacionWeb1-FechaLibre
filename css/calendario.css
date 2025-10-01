@@ -168,7 +168,7 @@ html {
     font-family: 'SUSE Mono", sans-serif';
 }
 
-.calendario__titulo p{
+.calendario__titulo p {
     font-size: 2em;
 }
 
@@ -188,8 +188,8 @@ html {
 .calendario__mes {
     background: white;
     padding: 1em;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.1);
 }
 
 .calendario__mes h2 {
@@ -208,14 +208,19 @@ html {
 }
 
 .calendario__semanas div {
-    font-weight: bold;
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #ccc;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    text-align: center;
+    vertical-align: top;
+    padding: 0.3em;
+    font-size: 0.9em;
+    line-height: 1.2;
 }
 
 .calendario__dias div {
-    padding: 0.75em 0.500em;
-    border: 1px solid #ddd;
+    padding: 0.75em 0.5em;
+    border: 0.0625em solid #ddd;
     min-height: 6.25em;
     display: flex;
     flex-direction: column;
@@ -243,12 +248,23 @@ html {
 
 
 /*INICIO FOOTER*/
+.footer {
+    margin-top: 2em;
+}
+
 .footer__datos {
-    margin-top: 8em;
+
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    border-top: .1em solid rgba(0, 0, 0, .3);
+}
+
+.footer .footer__datos .footer__datos__contenedores h3 {
+    margin-top: 1em;
+    color: #333;
+    font-size: 1em;
+    padding: 1em 0;
 }
 
 .footer .footer__datos .footer__datos__contenedores h3 {
@@ -291,7 +307,7 @@ html {
 /*FIN FOOTER*/
 
 /*INICIO RESPONSIVE*/
-@media (max-width:991px) {
+@media (max-width:60em) {
     html {
         font-size: 70%;
     }
@@ -393,7 +409,7 @@ html {
 
 }
 
-@media (max-width:450px) {
+@media (max-width:28em) {
     html {
         font-size: 50%;
     }
@@ -402,12 +418,26 @@ html {
         padding: 2em;
     }
 
+    .calendario__titulo{
+        width: 90%;
+        margin: 1em auto;
+        font-size: 0.700em;
+        
+    }
+
     .calendario__año {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2em;
         width: 90%;
         margin: 0 auto;
+    }
+
+    .calendario__mes div{
+        font-size: 0.75em;
+        /* Reduce tamaño del texto */
+        padding: 0.2em;
+        /* Reduce espacio interno */
     }
 }
 

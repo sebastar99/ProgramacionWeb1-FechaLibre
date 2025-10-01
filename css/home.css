@@ -3,7 +3,6 @@
     --color__header: #fff;
     --color__footer: #2a2b3f;
     --color__span: #1565c0;
-    --color__docente: #d4e6f1;
     --color__boton: #5499c7;
 }
 
@@ -40,7 +39,7 @@ html {
     align-items: center;
     justify-content: space-between;
     gap: 1em;
-    z-index: 9999;
+    z-index: 1;
 
 }
 
@@ -243,11 +242,9 @@ html {
 }
 
 .cursos {
-
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .cursos h2 {
@@ -260,17 +257,12 @@ html {
     text-shadow: 0.05em 0.05em 0.05em var(--color__newsletter);
 }
 
-.cursos span {
-    color: #5daeffcc;
-    text-decoration: underline;
-
-}
-
 .cursos-contenedor {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
     width: 100%;
+    padding: 0 1em;
     margin: 1em auto;
     height: auto;
 
@@ -282,19 +274,13 @@ html {
 .curso-4-frente,
 .curso-5-frente {
     width: 100%;
-    max-width: 420px;
-    /* opcional: límite en pantallas grandes */
+    max-width: 26em;
     min-width: 0;
-    /* importante para que el grid ajuste las cajas */
     height: auto;
-    /* quitar alturas rígidas */
     margin: 0 auto;
     background-color: #5499c731;
     border-radius: 1em;
     box-shadow: 0 .5em 1em var(--color__sombra);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .curso-1-frente img,
@@ -304,7 +290,6 @@ html {
 .curso-5-frente img {
     width: 100%;
     height: auto;
-    /* deja que la imagen escale */
     object-fit: cover;
     aspect-ratio: 16/9;
 }
@@ -368,6 +353,7 @@ html {
     color: #ffffffda;
     cursor: pointer;
     font-size: 1em;
+    margin-bottom: 1em;
 }
 
 
@@ -385,7 +371,7 @@ html {
 .medios-de-pago-contenedor {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
+    gap: 1em;
     width: 90%;
     margin: 0 auto;
 }
@@ -395,14 +381,12 @@ html {
 .transf-bancaria,
 .mercado-pago,
 .paypal {
-
     background-color: #ffffff;
     border-radius: 0.5em;
     height: 10em;
     width: 18em;
     padding: 0.5em 0.2em 0 0.2em;
     text-align: center;
-
 }
 
 .tarj-credito span,
@@ -435,27 +419,31 @@ html {
 .contenedor-transf img,
 .contenedor-mp img,
 .contenedor-ppal img {
-
     width: 3em;
     height: 3em;
     border-radius: 50%;
     object-fit: cover;
     margin: 0.2em;
-
 }
 
 /*FIN MAIN*/
 
 /*INICIO FOOTER*/
+
+.footer{
+    margin-top: 2em;
+}
+
 .footer__datos {
-    margin-top: 8em;
+    
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    border-top: .1em solid rgba(0, 0, 0, .3);
 }
 
 .footer .footer__datos .footer__datos__contenedores h3 {
+    margin-top: 1em;
     color: #333;
     font-size: 1em;
     padding: 1em 0;
@@ -496,7 +484,7 @@ html {
 /*FIN FOOTER*/
 
 /*INICIO RESPONSIVE*/
-@media (max-width:991px) {
+@media (max-width:60em) {
     html {
         font-size: 70%;
     }
@@ -579,19 +567,17 @@ html {
 
     .cursos-contenedor,
     .medios-de-pago-contenedor {
-        grid-template-columns: 1fr;
-        gap: 0.9rem;
-        width: calc(100% - 2rem);
-        /* deja 1rem espacio a cada lado */
-        margin: 0.8rem auto;
-        padding: 0 1rem;
-        /* evita que las tarjetas lleguen hasta el borde */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.9em;
+        width: calc(100% - 2em);
+        margin: 0.8em auto;
+        padding: 0 1em;
         box-sizing: border-box;
         height: auto;
-        /* importantísimo: NO height:100% */
     }
 
-    /* Tarjetas a todo ancho del grid (sin min-width que las forcen) */
+
     .curso-1-frente,
     .curso-2-frente,
     .curso-3-frente,
@@ -601,23 +587,20 @@ html {
         width: 100%;
         min-width: 0;
         margin: 0;
-        padding-bottom: 0.6rem;
+        padding-bottom: 0.6em;
     }
 
-    /* Ajustes de imagen en móvil para evitar que estiren la tarjeta */
     .curso-1-frente img,
     .curso-2-frente img,
     .curso-3-frente img,
     .curso-4-frente img,
     .curso-5-frente img {
         height: auto;
-        /* NUNCA height fijo en px/ems en móvil */
         max-height: 40vh;
-        /* opcional: limita la altura relativa a la pantalla */
     }
 }
 
-@media (max-width:450px) {
+@media (max-width:28em) {
     html {
         font-size: 50%;
     }
@@ -628,25 +611,22 @@ html {
 
     .cursos-contenedor,
     .medios-de-pago-contenedor {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-wrap: wrap;
         gap: 0.9rem;
         width: calc(100% - 2rem);
-        /* deja 1rem espacio a cada lado */
-        margin: 0.8rem auto;
-        padding: 0 1rem;
-        /* evita que las tarjetas lleguen hasta el borde */
+        margin: 0.8em auto;
+        padding: 0 1em;
         box-sizing: border-box;
         height: auto;
-        /* importantísimo: NO height:100% */
     }
 
-    .medios-de-pago-contenedor{
+    .medios-de-pago-contenedor {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    /* Tarjetas a todo ancho del grid (sin min-width que las forcen) */
     .curso-1-frente,
     .curso-2-frente,
     .curso-3-frente,
@@ -656,10 +636,9 @@ html {
         width: 100%;
         min-width: 0;
         margin: 0;
-        padding-bottom: 0.6rem;
+        padding-bottom: 0.6em;
     }
 
-    /* Ajustes de imagen en móvil para evitar que estiren la tarjeta */
     .curso-1-frente img,
     .curso-2-frente img,
     .curso-3-frente img,
@@ -667,8 +646,6 @@ html {
     .curso-5-frente img {
         height: auto;
     }
-
-
 }
 
 /*FIN RESPONSIVE*/
